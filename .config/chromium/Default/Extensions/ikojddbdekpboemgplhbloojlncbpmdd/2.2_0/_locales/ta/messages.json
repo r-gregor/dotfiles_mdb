@@ -1,0 +1,20 @@
+{
+   "addToBlacklist": {
+      "message": "Add to blacklist"
+   },
+   "disable": {
+      "message": "disable"
+   },
+   "enable": {
+      "message": "enable"
+   },
+   "extDesc": {
+      "message": "டார்க் தீம் தொகுப்பு - பிரபலமான தளங்கள் இருண்ட முறையில் உங்கள் கண்களை பாதுகாக்க"
+   },
+   "extName": {
+      "message": "Dark theme suite"
+   },
+   "removeFromBlacklist": {
+      "message": "Remove from blacklist"
+   }
+}

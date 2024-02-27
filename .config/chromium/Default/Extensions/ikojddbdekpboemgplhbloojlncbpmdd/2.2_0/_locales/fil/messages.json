@@ -1,0 +1,20 @@
+{
+   "addToBlacklist": {
+      "message": "Add to blacklist"
+   },
+   "disable": {
+      "message": "disable"
+   },
+   "enable": {
+      "message": "enable"
+   },
+   "extDesc": {
+      "message": "Madilim na tema suite - protektahan ang iyong mga mata sa madilim na mode para sa mga tanyag na site"
+   },
+   "extName": {
+      "message": "Dark theme suite"
+   },
+   "removeFromBlacklist": {
+      "message": "Remove from blacklist"
+   }
+}

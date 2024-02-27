@@ -1,0 +1,20 @@
+{
+   "addToBlacklist": {
+      "message": "Add to blacklist"
+   },
+   "disable": {
+      "message": "disable"
+   },
+   "enable": {
+      "message": "enable"
+   },
+   "extDesc": {
+      "message": "Dark theme suite - bescherm uw ogen met donkere mode voor populaire sites"
+   },
+   "extName": {
+      "message": "Dark theme suite"
+   },
+   "removeFromBlacklist": {
+      "message": "Remove from blacklist"
+   }
+}

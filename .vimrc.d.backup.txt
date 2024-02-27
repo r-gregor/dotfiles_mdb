@@ -1,0 +1,49 @@
+set number
+set relativenumber
+
+colorscheme simple-dark
+
+set laststatus=2
+set t_Co=256
+set nohlsearch
+ 
+" from EN's .vimrc:
+set nocompatible
+set backspace=indent,eol,start
+filetype plugin indent on
+set autoindent		" always set autoindenting on
+syntax on
+set ignorecase
+" set listchars=tab:\|\ 
+set listchars=tab:▶\ 
+set list
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
+set smartindent
+
+
+" status bar settup-01
+" added manually 2201203
+" source /home/gregor.redelonghi/.vim/vim-status-1.vim
+"
+" status bar settup-02
+" added from: https://github.com/itchyny/lightline.vim
+" git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/plugins/start/lightline
+"
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
+" ABBREVIATIONS
+ab sbng #! /usr/bin/env bash<cr><cr>### Name:<tab>Scriptname ...<cr>### Author:<tab>Author ... <cr>### Date:<tab> <cr>### Decription:<cr>### <cr>### <cr>### <cr> 
+ab grv ${gr_} 
+ab ptn3 #! /usr/bin/env python3<cr># -*- coding: utf-8 -*-<cr><cr>
+"inoremap ${ ${}<Left>
+inoremap ${ ${}<ESC>hli
+inoremap {  {}<ESC>hli
+inoremap (  ()<ESC>hli
+inoremap [  []<ESC>hli
+

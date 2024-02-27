@@ -1,0 +1,20 @@
+{
+   "addToBlacklist": {
+      "message": "Add to blacklist"
+   },
+   "disable": {
+      "message": "disable"
+   },
+   "enable": {
+      "message": "enable"
+   },
+   "extDesc": {
+      "message": "ডার্ক থিম স্যুট - জনপ্রিয় সাইটের জন্য অন্ধকার মোড সঙ্গে আপনার চোখ রক্ষা"
+   },
+   "extName": {
+      "message": "Dark theme suite"
+   },
+   "removeFromBlacklist": {
+      "message": "Remove from blacklist"
+   }
+}

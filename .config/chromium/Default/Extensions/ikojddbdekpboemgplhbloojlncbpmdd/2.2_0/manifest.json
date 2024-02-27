@@ -1,0 +1,34 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon-128.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "moment.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "exclude_globs": [ "*/chrome/newtab*" ],
+      "js": [ "inject.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extDesc__",
+   "differential_fingerprint": "1.395e598982952103f29296fc802ac1454901b944c9605ed2ec651bb3791ab197",
+   "icons": {
+      "128": "icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAipFLnORMT80D1YZy3EXFZUYuLSuPRw6kedUaIBUbpIhMMNI6tzIT+05/zg/tC5o2mv/TbGFhUQTYu9twIHo2YyPL/+/k6LThtzFJwdHlFCN/vKndaBlZLvce+0qSYYJgDTlpAB63qZrFLvPO/r39Goy5ud19gTRUPtSCg6DvU1pnxkE2UDEW1hmjsrUjKMuqbLWcKkrdGoLpYSYz47Oo8ERs0WRq4CLR2wLS+KjOnU9dWPYsGuNnH7yxE8j7SlewE/HOBd2Zmo4riuEiDnajXB0xPEiR2ePWeqZg6WNqs+e8P/8tnu+7OdAlHDxMQrUt/VER1Jz7eeMGvjSAwocq+QIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extName__",
+   "permissions": [ "tabs", "storage", "\u003Call_urls>", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2",
+   "web_accessible_resources": [ "/css/*.css" ]
+}

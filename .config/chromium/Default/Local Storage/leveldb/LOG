@@ -1,0 +1,63 @@
+2020/12/08-00:52:40.845 99f Reusing MANIFEST /home/rgregor/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2020/12/08-00:52:40.928 99f Recovering log #8994
+2020/12/08-00:52:40.951 99f Reusing old log /home/rgregor/.config/chromium/Default/Local Storage/leveldb/008994.log 
+2020/12/08-00:56:34.361 9d7 Level-0 table #8998: started
+2020/12/08-00:56:34.417 9d7 Level-0 table #8998: 17202 bytes OK
+2020/12/08-00:56:34.538 9d7 Delete type=0 #8994
+2020/12/08-00:56:34.538 ba9 Compacting 4@0 + 1@1 files
+2020/12/08-00:56:34.626 ba9 Generated table #8999@0: 7401 keys, 158274 bytes
+2020/12/08-00:56:34.626 ba9 Compacted 4@0 + 1@1 files => 158274 bytes
+2020/12/08-00:56:34.669 ba9 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/12/08-00:56:34.670 ba9 Delete type=2 #8998
+2020/12/08-00:56:34.670 ba9 Delete type=2 #8993
+2020/12/08-00:56:34.670 ba9 Delete type=2 #8989
+2020/12/08-00:56:34.670 ba9 Delete type=2 #8991
+2020/12/08-00:56:34.670 ba9 Delete type=2 #8995
+2020/12/08-00:59:34.360 db0 Level-0 table #9001: started
+2020/12/08-00:59:34.418 db0 Level-0 table #9001: 20762 bytes OK
+2020/12/08-00:59:34.454 db0 Delete type=0 #8997
+2020/12/08-01:01:34.360 df7 Level-0 table #9003: started
+2020/12/08-01:01:34.415 df7 Level-0 table #9003: 22408 bytes OK
+2020/12/08-01:01:34.459 df7 Delete type=0 #9000
+2020/12/08-01:02:34.360 db0 Level-0 table #9005: started
+2020/12/08-01:02:34.417 db0 Level-0 table #9005: 16245 bytes OK
+2020/12/08-01:02:34.461 db0 Delete type=0 #9002
+2020/12/08-01:03:34.360 db0 Level-0 table #9007: started
+2020/12/08-01:03:34.412 db0 Level-0 table #9007: 19142 bytes OK
+2020/12/08-01:03:34.457 db0 Delete type=0 #9004
+2020/12/08-01:03:34.458 db0 Compacting 4@0 + 1@1 files
+2020/12/08-01:03:34.512 db0 Generated table #9008@0: 7403 keys, 173182 bytes
+2020/12/08-01:03:34.512 db0 Compacted 4@0 + 1@1 files => 173182 bytes
+2020/12/08-01:03:34.556 db0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/12/08-01:03:34.556 db0 Delete type=2 #9007
+2020/12/08-01:03:34.556 db0 Delete type=2 #8999
+2020/12/08-01:03:34.556 db0 Delete type=2 #9005
+2020/12/08-01:03:34.556 db0 Delete type=2 #9001
+2020/12/08-01:03:34.556 db0 Delete type=2 #9003
+2020/12/08-01:04:34.360 e5f Level-0 table #9010: started
+2020/12/08-01:04:34.419 e5f Level-0 table #9010: 21171 bytes OK
+2020/12/08-01:04:34.460 e5f Delete type=0 #9006
+2020/12/08-01:05:34.361 e5f Level-0 table #9012: started
+2020/12/08-01:05:34.412 e5f Level-0 table #9012: 21469 bytes OK
+2020/12/08-01:05:34.490 e5f Delete type=0 #9009
+2020/12/08-01:06:34.360 e5f Level-0 table #9014: started
+2020/12/08-01:06:34.423 e5f Level-0 table #9014: 21232 bytes OK
+2020/12/08-01:06:34.461 e5f Delete type=0 #9011
+2020/12/08-01:07:34.359 fc5 Level-0 table #9016: started
+2020/12/08-01:07:34.413 fc5 Level-0 table #9016: 21822 bytes OK
+2020/12/08-01:07:34.450 fc5 Delete type=0 #9013
+2020/12/08-01:07:34.451 e5f Compacting 4@0 + 1@1 files
+2020/12/08-01:07:34.502 e5f Generated table #9017@0: 7407 keys, 175729 bytes
+2020/12/08-01:07:34.502 e5f Compacted 4@0 + 1@1 files => 175729 bytes
+2020/12/08-01:07:34.538 e5f compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/12/08-01:07:34.540 e5f Delete type=2 #9010
+2020/12/08-01:07:34.540 e5f Delete type=2 #9014
+2020/12/08-01:07:34.540 e5f Delete type=2 #9008
+2020/12/08-01:07:34.540 e5f Delete type=2 #9016
+2020/12/08-01:07:34.540 e5f Delete type=2 #9012
+2020/12/08-01:08:34.360 e5f Level-0 table #9019: started
+2020/12/08-01:08:34.413 e5f Level-0 table #9019: 20515 bytes OK
+2020/12/08-01:08:34.456 e5f Delete type=0 #9015
+2020/12/08-01:08:49.181 db0 Level-0 table #9021: started
+2020/12/08-01:08:49.265 db0 Level-0 table #9021: 20767 bytes OK
+2020/12/08-01:08:49.546 db0 Delete type=0 #9018

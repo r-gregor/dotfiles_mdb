@@ -1,0 +1,20 @@
+{
+   "addToBlacklist": {
+      "message": "Add to blacklist"
+   },
+   "disable": {
+      "message": "disable"
+   },
+   "enable": {
+      "message": "enable"
+   },
+   "extDesc": {
+      "message": "Gelap tema Suite - melindungi mata Anda dengan modus gelap untuk situs populer"
+   },
+   "extName": {
+      "message": "Dark theme suite"
+   },
+   "removeFromBlacklist": {
+      "message": "Remove from blacklist"
+   }
+}

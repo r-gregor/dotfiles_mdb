@@ -1,0 +1,29 @@
+<application>
+  <component name="DimensionService">
+    <size key="GridCell.Tab.0.left.0.0.1600.900" width="1554" height="252" />
+    <size key="GridCell.Tab.0.center.0.0.1600.900" width="1554" height="252" />
+    <size key="GridCell.Tab.0.right.0.0.1600.900" width="1554" height="252" />
+    <size key="GridCell.Tab.0.bottom.0.0.1600.900" width="1554" height="252" />
+  </component>
+  <component name="WindowManager">
+    <frame x="-5" y="20" width="1610" height="885" extendedState="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="508" y="336" width="593" height="216" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1622238996716">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state x="508" y="336" width="593" height="216" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.25.1600.875" timestamp="1622238996716" />
+    <state x="394" y="30" width="812" height="777" key="new project wizard" timestamp="1622239784187">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state x="394" y="30" width="812" height="777" key="new project wizard/0.25.1600.875" timestamp="1622239784187" />
+  </component>
+</application>
