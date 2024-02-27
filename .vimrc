@@ -1,4 +1,4 @@
-"DOMA: LAST CHANGE 20240206
+"DOMA: LAST CHANGE 20240227
 "
 " ------------------------- DEFAULT SETTINGS -----------------------------------
 set nocompatible                    " This must be first, because it changes other options as a side effect.
