@@ -1,0 +1,32 @@
+#import = ["/home/rgregor/.config/alacritty/dracula_custom-1.toml"]
+import = ["/home/rgregor/.config/alacritty/dracula.toml"]
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "Ubuntu Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Ubuntu Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Ubuntu Mono"
+style = "Italic"
+
+[font.normal]
+family = "Ubuntu Mono"
+style = "Regular"
+
+[window.dimensions]
+columns = 160
+lines = 40
+
+[window.position]
+x = 60
+y = 50
+
+[window]
+opacity = 0.99

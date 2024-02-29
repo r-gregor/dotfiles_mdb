@@ -1,5 +1,5 @@
-favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,libreoffice-writer.desktop,libreoffice-calc.desktop,org.gnome.Software.desktop,xfce4-terminal-emulator.desktop,xfhelp4.desktop,kitty.desktop,megasync.desktop
-recent=megasync.desktop,xfce4-web-browser.desktop,xfce-ui-settings.desktop,org.gnome.FontManager.desktop,Alacritty.desktop,kitty.desktop,xfce4-terminal-emulator.desktop,xfce4-screensaver-preferences.desktop,dropbox.desktop,xfce-wm-settings.desktop
+favorites=xfce4-web-browser.desktop,xfce4-file-manager.desktop,libreoffice-writer.desktop,libreoffice-calc.desktop,org.gnome.Software.desktop,xfce4-terminal-emulator.desktop,Alacritty.desktop,kitty.desktop,dropbox.desktop,mate-calc.desktop,xsane.desktop,xfce-ui-settings.desktop,doublecmd.desktop,vlc.desktop,kodi.desktop,atril.desktop,org.gnome.DiskUtility.desktop,xfce-display-settings.desktop,arandr.desktop,system-config-printer.desktop,thunar-volman-settings.desktop,lxtask.desktop,xfhelp4.desktop
+recent=org.gnome.FontManager.desktop,kodi.desktop,xfce4-file-manager.desktop,xfce4-web-browser.desktop,xsane.desktop,doublecmd.desktop,megasync.desktop,xfce-ui-settings.desktop,Alacritty.desktop,kitty.desktop
 button-icon=xubuntu-logo-menu
 button-single-row=false
 show-button-title=false
@@ -24,7 +24,7 @@ stay-on-focus-out=false
 profile-shape=0
 confirm-session-command=true
 menu-width=450
-menu-height=500
+menu-height=727
 menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true

@@ -510,28 +510,14 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>1</Direction>
-                <Function>12</Function>
+                <Direction>2</Direction>
+                <Function>7</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path Filename="PYTHON_d_metsys">/home/rgregor/majstaf/coding/PYTHON_d/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/coding/PYTHON_d/PYTHON_d_metsys/</Path>
-                  <Path Filename="PYTHON_d_metsys">/home/rgregor/majstaf/coding/PYTHON_d/</Path>
-                  <Path Filename="backup_SEAGATE_1-5Tb_scripts">/home/rgregor/majstaf/coding/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/coding/backup_SEAGATE_1-5Tb_scripts/</Path>
-                  <Path Filename="BASH_d">/home/rgregor/majstaf/coding/</Path>
-                  <Path Filename="BASH_d_testing">/home/rgregor/majstaf/coding/BASH_d/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/coding/BASH_d/BASH_d_testing/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/coding/BASH_d/</Path>
-                  <Path Filename="ext_backups_d_metsys">/home/rgregor/majstaf/coding/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/coding/ext_backups_d_metsys/</Path>
-                  <Path Filename="fnd">/home/rgregor/majstaf/coding/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/coding/fnd/</Path>
-                  <Path Filename="git-testing-d">/home/rgregor/majstaf/coding/</Path>
                   <Path Filename="..">/home/rgregor/majstaf/coding/git-testing-d/</Path>
                   <Path Filename="lynxdump">/home/rgregor/majstaf/coding/</Path>
                   <Path Filename="..">/home/rgregor/majstaf/coding/lynxdump/</Path>
@@ -567,7 +553,21 @@
                   <Path Filename="Bbs_and_Rst">/home/rgregor/majstaf/majfajls/.spsl/</Path>
                   <Path Filename="..">/home/rgregor/majstaf/majfajls/.spsl/Bbs_and_Rst/</Path>
                   <Path Filename="..">/home/rgregor/majstaf/majfajls/.spsl/</Path>
-                  <Path Filename=".spsl">/home/rgregor/majstaf/majfajls/</Path>
+                  <Path Filename="..">/home/rgregor/majstaf/majfajls/</Path>
+                  <Path Filename="..">/home/rgregor/majstaf/</Path>
+                  <Path Filename="Dropbox">/home/rgregor/</Path>
+                  <Path Filename="SKUPNI">/home/rgregor/Dropbox/</Path>
+                  <Path Filename="..">/home/rgregor/Dropbox/SKUPNI/</Path>
+                  <Path Filename="Documents">/home/rgregor/</Path>
+                  <Path Filename="ZAVAROVANJA_2023">/home/rgregor/Documents/</Path>
+                  <Path Filename="majstaf">/home/rgregor/</Path>
+                  <Path Filename="majmedia">/home/rgregor/majstaf/</Path>
+                  <Path Filename="Movies">/home/rgregor/majstaf/majmedia/</Path>
+                  <Path Filename="..">/home/rgregor/majstaf/majmedia/Movies/</Path>
+                  <Path Filename="Seivom">/home/rgregor/majstaf/majmedia/</Path>
+                  <Path Filename="..">/home/rgregor/majstaf/majmedia/Seivom/</Path>
+                  <Path Filename="Movies">/home/rgregor/majstaf/majmedia/</Path>
+                  <Path Filename="..">/home/rgregor/majstaf/majmedia/Movies/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -583,32 +583,14 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>2</Direction>
-                <Function>7</Function>
+                <Direction>1</Direction>
+                <Function>12</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path Filename="majstaf">/home/rgregor/</Path>
-                  <Path Filename="majknowledgebase">/home/rgregor/majstaf/</Path>
-                  <Path Filename="odprto">/home/rgregor/majstaf/majknowledgebase/</Path>
-                  <Path Filename="c-and-cpp-books">/home/rgregor/majstaf/majknowledgebase/odprto/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/majknowledgebase/odprto/c-and-cpp-books/</Path>
-                  <Path Filename="c-and-cpp-books">/home/rgregor/majstaf/majknowledgebase/odprto/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/majknowledgebase/odprto/c-and-cpp-books/</Path>
-                  <Path Filename="java-books">/home/rgregor/majstaf/majknowledgebase/odprto/</Path>
-                  <Path Filename="java_tutorials">/home/rgregor/majstaf/majknowledgebase/odprto/java-books/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/majknowledgebase/odprto/java-books/java_tutorials/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/majknowledgebase/odprto/java-books/</Path>
-                  <Path Filename="JavaScript_books">/home/rgregor/majstaf/majknowledgebase/odprto/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/majknowledgebase/odprto/JavaScript_books/</Path>
-                  <Path Filename="python-books">/home/rgregor/majstaf/majknowledgebase/odprto/</Path>
-                  <Path Filename="Jupyter-PyCharm-and-Pizza_20190809.pdf">/home/rgregor/majstaf/majknowledgebase/odprto/python-books/</Path>
-                  <Path Filename="coding_l2">/home/rgregor/majstaf/</Path>
-                  <Path Filename="en-scripts-20200916">/home/rgregor/majstaf/coding_l2/</Path>
-                  <Path Filename="..">/home/rgregor/majstaf/coding_l2/en-scripts-20200916/</Path>
                   <Path Filename="NCURSES_d">/home/rgregor/majstaf/coding_l2/</Path>
                   <Path Filename="..">/home/rgregor/majstaf/coding_l2/NCURSES_d/</Path>
                   <Path Filename="NCURSES_d">/home/rgregor/majstaf/coding_l2/</Path>
@@ -641,6 +623,24 @@
                   <Path Filename="spsl">/mnt/</Path>
                   <Path Filename="bbs_and_rest">/mnt/spsl/</Path>
                   <Path Filename="..">/mnt/spsl/bbs_and_rest/</Path>
+                  <Path Filename="..">/mnt/</Path>
+                  <Path Filename="home">/</Path>
+                  <Path Filename="rgregor">/home/</Path>
+                  <Path Filename="Documents">/home/rgregor/</Path>
+                  <Path Filename="ZAVAROVANJA_2023">/home/rgregor/Documents/</Path>
+                  <Path Filename="ZAMAKANJE_20230807">/home/rgregor/Documents/ZAVAROVANJA_2023/</Path>
+                  <Path Filename="..">/home/rgregor/Documents/ZAVAROVANJA_2023/ZAMAKANJE_20230807/</Path>
+                  <Path Filename="ZAVAROVANJA_20221023">/home/rgregor/Documents/ZAVAROVANJA_2023/</Path>
+                  <Path Filename="NEZGODNA-ZAVAROVANJA-OBNOVA_2023-11">/home/rgregor/Documents/ZAVAROVANJA_2023/ZAVAROVANJA_20221023/</Path>
+                  <Path Filename="..">/home/rgregor/Documents/ZAVAROVANJA_2023/ZAVAROVANJA_20221023/NEZGODNA-ZAVAROVANJA-OBNOVA_2023-11/</Path>
+                  <Path Filename="..">/home/rgregor/Documents/ZAVAROVANJA_2023/ZAVAROVANJA_20221023/</Path>
+                  <Path Filename="majmedia">/media/rgregor/EKSFAT/</Path>
+                  <Path Filename="Movies">/media/rgregor/EKSFAT/majmedia/</Path>
+                  <Path Filename="..">/media/rgregor/EKSFAT/majmedia/Movies/</Path>
+                  <Path Filename="Seivom">/media/rgregor/EKSFAT/majmedia/</Path>
+                  <Path Filename="..">/media/rgregor/EKSFAT/majmedia/Seivom/</Path>
+                  <Path Filename="Movies">/media/rgregor/EKSFAT/majmedia/</Path>
+                  <Path Filename="..">/media/rgregor/EKSFAT/majmedia/Movies/</Path>
                 </Paths>
               </Entry>
             </History>

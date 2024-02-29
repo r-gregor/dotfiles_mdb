@@ -2,13 +2,27 @@
 <doublecmd>
   <History>
     <Navigation>
+      <Item>/home/rgregor/majstaf/majmedia/Movies/</Item>
+      <Item>/home/rgregor/majstaf/majmedia/</Item>
+      <Item>/media/rgregor/EKSFAT/majmedia/Movies/</Item>
+      <Item>/media/rgregor/EKSFAT/majmedia/</Item>
+      <Item>/home/rgregor/majstaf/majmedia/Seivom/</Item>
+      <Item>/media/rgregor/EKSFAT/majmedia/Seivom/</Item>
+      <Item>/home/rgregor/majstaf/</Item>
+      <Item>/home/rgregor/</Item>
+      <Item>/media/rgregor/EKSFAT/</Item>
+      <Item>/home/rgregor/Documents/ZAVAROVANJA_2023/ZAVAROVANJA_20221023/</Item>
+      <Item>/home/rgregor/Documents/ZAVAROVANJA_2023/ZAVAROVANJA_20221023/NEZGODNA-ZAVAROVANJA-OBNOVA_2023-11/</Item>
+      <Item>/home/rgregor/Documents/ZAVAROVANJA_2023/</Item>
+      <Item>/home/rgregor/Documents/ZAVAROVANJA_2023/ZAMAKANJE_20230807/</Item>
+      <Item>/home/rgregor/Documents/</Item>
+      <Item>/home/rgregor/Dropbox/SKUPNI/</Item>
+      <Item>/home/rgregor/Dropbox/</Item>
+      <Item>/home/</Item>
+      <Item>/</Item>
       <Item>/home/rgregor/majstaf/majfajls/</Item>
       <Item>/home/rgregor/majstaf/majfajls/.spsl/</Item>
       <Item>/home/rgregor/majstaf/majfajls/.spsl/Bbs_and_Rst/</Item>
-      <Item>/home/rgregor/majstaf/</Item>
-      <Item>/home/rgregor/</Item>
-      <Item>/home/</Item>
-      <Item>/</Item>
       <Item>/media/</Item>
       <Item>/media/rgregor/</Item>
       <Item>/mnt/spsl/bbs_and_rest/</Item>
@@ -39,19 +53,6 @@
       <Item>/home/rgregor/majstaf/coding/PYTHON_d/PYTHON_d_metsys/</Item>
       <Item>/home/rgregor/majstaf/coding/PYTHON_d/PYTHON_testing/</Item>
       <Item>/home/rgregor/majstaf/coding/JAVA_d/JAVA_testing/</Item>
-      <Item>/home/rgregor/majstaf/coding/JAVA_d/JAVA_testing/jt_011_BRISI_20190301/</Item>
-      <Item>/home/rgregor/majstaf/coding/JAVA_d/</Item>
-      <Item>/home/rgregor/majstaf/coding/C_Cpp/</Item>
-      <Item>/home/rgregor/majstaf/coding/C_Cpp/c_testing/</Item>
-      <Item>/home/rgregor/majstaf/coding/C_Cpp/c_testing/ct_019_realpath_20211115/</Item>
-      <Item>/home/rgregor/majstaf/coding/C_Cpp/c_testing/ct_017_realpath_test_20211115/</Item>
-      <Item>/home/rgregor/OLDHDD/Dropbox/ODPRTO/_PYTHON/</Item>
-      <Item>/home/rgregor/OLDHDD/Dropbox/ODPRTO/_PYTHON/PDF/</Item>
-      <Item>/home/rgregor/majstaf/majknowledgebase/odprto/python-books/</Item>
-      <Item>/home/rgregor/majstaf/majknowledgebase/odprto/</Item>
-      <Item>/home/rgregor/OLDHDD/Dropbox/ODPRTO/</Item>
-      <Item>/home/rgregor/OLDHDD/Dropbox/ODPRTO/_JAVA/</Item>
-      <Item>/home/rgregor/majstaf/majknowledgebase/odprto/JavaScript_books/</Item>
     </Navigation>
     <CommandLine>
       <Item>.spsl/</Item>
@@ -62,7 +63,10 @@
     <SearchTextPath/>
     <ReplaceText/>
     <ReplaceTextPath/>
-    <CreateDirectories/>
+    <CreateDirectories>
+      <Item>NEZGODNA-ZAVAROVANJA-OBNOVA_2023-11</Item>
+      <Item>ZAVAROVANJA_2023</Item>
+    </CreateDirectories>
     <RenameNameMask/>
     <RenameExtMask/>
     <SearchDirectories/>
