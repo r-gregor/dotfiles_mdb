@@ -360,4 +360,7 @@ hi Normal ctermbg='131926' guibg='#131926'
 " hi Normal ctermbg='222229' guibg='#222229'
 
 " 20240229
-"
+
+" 20240314
+hi Normal ctermbg=NONE guibg=NONE
+
