@@ -288,7 +288,7 @@ hi CursorLine cterm=NONE guifg=NONE
 " from Plugin vim-code-dark
 " colorscheme codedark
 
-ab csrt #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(void<right> {<CR><CR><CR><CR><TAB>return 0;<CR><ESC>4ki
+ab cstrt #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(void<right> {<CR><CR><CR><CR><TAB>return 0;<CR><ESC>4ki
 ab cmn1 #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(void<right> {<CR><CR><CR><CR><TAB>return 0;<CR><ESC>4ki
 ab cmn2 #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(int argc, char **argv<right> {<CR><CR><CR><CR><TAB>return 0;<CR><ESC>4ki
 
