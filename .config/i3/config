@@ -194,6 +194,16 @@ bar {
 }
 
 
+# added 20240924
 gaps inner 15px
 gaps outer 5px
+
+# retain floating mode 20240924
+for_window [class="Nm-connection-editor" instance="nm-connection-editor"] floating enable
+for_window [class="Arandr" instance="arandr"] floating enable
+
+
+
+
+
 
