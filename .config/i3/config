@@ -205,3 +205,9 @@ for_window [class="System-config-printer.py" instance="system-config-printer"] f
 for_window [class="Xfce4-settings-manager" instance="xfce4-settings-manager"] floating enable
 for_window [class="Lxtask" instance="lxtask"] floating enable
 
+# 20240927 run scripts
+# exec_always --no-startup-id $HOME/.config/i3/scripts/YOUR_SCRIPT.sh
+#
+
+exec --no-startup-id nitrogen --restore
+
