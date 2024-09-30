@@ -45,7 +45,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# floating_modifier $mod
+floating_modifier $alt
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -201,6 +202,8 @@ for_window [class="System-config-printer.py" instance="system-config-printer"] f
 for_window [class="Xfce4-settings-manager" instance="xfce4-settings-manager"] floating enable
 for_window [class="Lxtask" instance="lxtask"] floating enable
 for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
+for_window [class="ColorPicker" instance="colorPicker"] floating enable
+
 
 # 20240927 run scripts
 # exec_always --no-startup-id $HOME/.config/i3/scripts/YOUR_SCRIPT.sh
@@ -216,4 +219,17 @@ bar {
         # status_command i3blocks
         status_command SCRIPT_DIR=~/.config/i3blocks/scripts/ i3blocks
 }
+
+
+# 20240930 -- borders
+default_border pixel  2
+
+client.focused              #353439 #ffffff #7B9F35
+client.unfocused            #353439 #333333 #7B9F35
+client.focused_inactive     #353439 #ffffff #7B9F35
+client.urgent               #353439 #ffffff #7B9F35
+focus_follows_mouse yes
+hide_edge_borders both
+
+# ---
 

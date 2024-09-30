@@ -31,7 +31,8 @@ y = 50
 [window]
 opacity = 0.99
 # dynamic_padding = true
-decorations = "None"
+# decorations = "None"
+decorations = "Full"
 blur = true
 resize_increments = false
 
