@@ -204,6 +204,7 @@ for_window [class="Lxtask" instance="lxtask"] floating enable
 for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
 for_window [class="ColorPicker" instance="colorPicker"] floating enable
 for_window [class="vlc" instance="vlc"] floating enable
+for_window [class="Transmission-gtk" instance="transmission-gtk"] floating enable
 
 
 # 20240927 run scripts
