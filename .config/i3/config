@@ -213,11 +213,20 @@ for_window [class="Transmission-gtk" instance="transmission-gtk"] floating enabl
 
 # exec --no-startup-id nitrogen --restore
 
-# feh
-exec --no-startup-id /usr/bin/feh --bg-scale "/home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2/mayo.jpg" &
-#
+# feh 20241002
+# exec --no-startup-id /usr/bin/feh --bg-scale "/home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2/mayo.jpg" &
 # # 20230117 bind volpejpersafler to WIN+c:
-bindsym $mod+c exec --no-startup-id /home/rgregor/.local/bin/volpejprsafler
+# bindsym $mod+c exec --no-startup-id /home/rgregor/.local/bin/volpejprsafler
+
+# feh 20241003
+exec --no-startup-id feh --randomize --bg-fill /home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2 &
+bindsym $mod+c exec --no-startup-id feh /home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2/* --recursive --randomize --bg-fill
+
+
+#
+#
+
+# dmenu logout menu
 bindsym $alt+l exec --no-startup-id /home/rgregor/.local/bin/logout_menu_dmn
 
 # Start i3bar to display a workspace bar (plus the system information i3status
