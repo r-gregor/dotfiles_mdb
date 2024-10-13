@@ -5,19 +5,19 @@ import = ["/home/rgregor/.config/alacritty/dracula.toml"]
 size = 13.0
 
 [font.bold]
-family = "Ubuntu Mono"
+family = "UbuntuMono Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "Ubuntu Mono"
+family = "UbuntuMono Nerd Font Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "Ubuntu Mono"
+family = "UbuntuMono Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "Ubuntu Mono"
+family = "UbuntuMono Nerd Font Mono"
 style = "Regular"
 
 [window.dimensions]
