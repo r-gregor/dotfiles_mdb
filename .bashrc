@@ -58,5 +58,5 @@ source $HOME/majstaf/majrcs/xcol_bash.sh
 . "$HOME/.cargo/env"
 source /home/rgregor/.config/alacritty/extra/completions/alacritty.bash
 
-# eval "$(starship init bash)"
+eval "$(starship init bash)"
 
