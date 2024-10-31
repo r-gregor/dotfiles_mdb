@@ -60,5 +60,3 @@ source /home/rgregor/.config/alacritty/extra/completions/alacritty.bash
 
 # eval "$(starship init bash)"
 
-source ~/.bashrc_nerd
-

@@ -120,12 +120,10 @@ fi
 # SOURCES ...
 source /home/rgregor/majstaf/majrcs/bashrc_prompt_nerd_muadib
 source $HOME/majstaf/majrcs/aliases_muadib
-# source $HOME/majstaf/majrcs/aliases_muadib_fish
 source $HOME/majstaf/majrcs/barve
 source $HOME/majstaf/majrcs/funclist
-source $HOME/majstaf/majrcs/peesena
 source $HOME/majstaf/majrcs/vars_muadib
-source $HOME/majstaf/majrcs/xcol_bash.sh
+# source $HOME/majstaf/majrcs/xcol_bash.sh
 
 . "$HOME/.cargo/env"
 source /home/rgregor/.config/alacritty/extra/completions/alacritty.bash
