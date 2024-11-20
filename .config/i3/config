@@ -25,6 +25,7 @@ font pango:RobotoMono Nerd Font 12
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
+# !!! # exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -57,11 +58,13 @@ tiling_drag modifier titlebar
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec --no-startup-id /usr/local/bin/alacritty
 
 # start browser (Firefox)
 bindsym $mod+b exec --no-startup-id /usr/bin/firefox
 bindsym $mod+g exec --no-startup-id /usr/bin/google-chrome-stable
+bindsym $mod+Return exec --no-startup-id /usr/local/bin/alacritty
+bindsym $alt+Return exec --no-startup-id /usr/bin/kitty
+# bindsym $mod+Return exec --no-startup-id /usr/bin/kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -98,6 +101,12 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+# switch to next/prev workspace
+bindsym $alt+Ctrl+Right workspace next
+bindsym $alt+Ctrl+Left workspace prev
+bindsym $alt+Ctrl+n workspace next
+bindsym $alt+Ctrl+p workspace prev
 
 # split in horizontal orientation
 bindsym $alt+h split h
@@ -205,7 +214,7 @@ bindsym $mod+r mode "resize"
 
 # added 20240924
 gaps inner 15px
-gaps outer 5px
+gaps outer 1px
 
 # retain floating mode 20240924
 for_window [class="Nm-connection-editor" instance="nm-connection-editor"] floating enable
@@ -234,23 +243,16 @@ for_window [class="Transmission-gtk" instance="transmission-gtk"] floating enabl
 exec --no-startup-id feh --randomize --bg-fill /home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2 &
 bindsym $mod+c exec --no-startup-id feh /home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2/* --recursive --randomize --bg-fill &
 
-
-#
-#
-
 # dmenu logout menu
-# bindsym $alt+l exec --no-startup-id /home/rgregor/.local/bin/logout_menu_dmn
-# bindsym $alt+r exec --no-startup-id /home/rgregor/.local/bin/logout_menu_rofi
-# bindsym $alt+p exec --no-startup-id "rofi -modi drun -show drun &"
-# bindsym $alt+s exec --no-startup-id /home/rgregor/.local/bin/binds_from_i3
-
 bindsym $alt+d exec --no-startup-id /home/rgregor/.local/bin/logout_menu_dmn
 bindsym $alt+r exec --no-startup-id /home/rgregor/.local/bin/logout_menu_rofi
 bindsym $alt+s exec --no-startup-id /home/rgregor/.local/bin/binds_from_i3
 bindsym $alt+f exec --no-startup-id /home/rgregor/.local/bin/floatings_dmn
 bindsym $alt+t exec --no-startup-id /home/rgregor/.local/bin/floatings_rofi
-# bindsym Control+k exec --no-startup-id kty
-bindsym Control+k exec --no-startup-id /usr/bin/kitty
+
+# enable enter password window
+# window after sudo apt install lxpolkit
+# !! # exec_always --no-startup-id lxpolkit
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -261,11 +263,9 @@ bindsym Control+k exec --no-startup-id /usr/bin/kitty
 #               status_command SCRIPT_DIR=~/.config/i3blocks/scripts/ i3blocks
 #       }
 
-# 20241110
-exec --no-startup-id /home/rgregor/.config/polybar/launch.sh
-
 # 20240930 -- borders
 default_border pixel  2
+# !! # default_border pixel 0 # after picom: transparency/blur
 
 client.focused              #353439 #ffffff #7B9F35
 client.unfocused            #353439 #333333 #7B9F35
@@ -274,5 +274,6 @@ client.urgent               #353439 #ffffff #7B9F35
 focus_follows_mouse yes
 hide_edge_borders both
 
-# ---
+# polybar 20241110
+exec --no-startup-id /home/rgregor/.config/polybar/launch.sh
 
