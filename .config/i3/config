@@ -25,7 +25,7 @@ font pango:RobotoMono Nerd Font 12
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
-# !!! # exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
+exec --no-startup-id picom --experimental-backend --config ~/.config/picom/picom.conf -b
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -264,8 +264,8 @@ bindsym $alt+t exec --no-startup-id /home/rgregor/.local/bin/floatings_rofi
 #       }
 
 # 20240930 -- borders
-default_border pixel  2
-# !! # default_border pixel 0 # after picom: transparency/blur
+# default_border pixel  2
+default_border pixel 0
 
 client.focused              #353439 #ffffff #7B9F35
 client.unfocused            #353439 #333333 #7B9F35
