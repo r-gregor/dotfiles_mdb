@@ -2,22 +2,22 @@
 import = ["/home/rgregor/.config/alacritty/dracula.toml"]
 
 [font]
-size = 13.0
+size = 12.0
 
 [font.bold]
-family = "UbuntuMono Nerd Font Mono"
+family = "Iosevka Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "UbuntuMono Nerd Font Mono"
+family = "Iosevka Nerd Font Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "UbuntuMono Nerd Font Mono"
+family = "Iosevka Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "UbuntuMono Nerd Font Mono"
+family = "Iosevka Nerd Font Mono"
 style = "Regular"
 
 [window.dimensions]
