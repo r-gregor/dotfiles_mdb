@@ -191,17 +191,17 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 2 px or 2 ppt
-        bindsym k resize grow height 2 px or 2 ppt
-        bindsym j resize shrink height 2 px or 2 ppt
-        bindsym l resize grow width 2 px or 2 ppt
-        # bindsym ccaron resize grow width 2 px or 2 ppt
+        bindsym h resize shrink width 1 px or 1 ppt
+        bindsym k resize grow height 1 px or 1 ppt
+        bindsym j resize shrink height 1 px or 1 ppt
+        bindsym l resize grow width 1 px or 1 ppt
+        # bindsym ccaron resize grow width 1 px or 1 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 2 px or 2 ppt
-        bindsym Down resize grow height 2 px or 2 ppt
-        bindsym Up resize shrink height 2 px or 2 ppt
-        bindsym Right resize grow width 2 px or 2 ppt
+        bindsym Left resize shrink width 1 px or 1 ppt
+        bindsym Down resize grow height 1 px or 1 ppt
+        bindsym Up resize shrink height 1 px or 1 ppt
+        bindsym Right resize grow width 1 px or 1 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -213,12 +213,13 @@ bindsym $mod+r mode "resize"
 
 
 # added 20240924
-gaps inner 15px
-gaps outer 1px
+gaps inner 25px
+gaps outer 5px
 
 # retain floating mode 20240924
 for_window [class="Nm-connection-editor" instance="nm-connection-editor"] floating enable
 for_window [class="Arandr" instance="arandr"] floating enable
+for_window [class="Lxappearance" instance="lxappearance"] floating enable
 for_window [class="System-config-printer.py" instance="system-config-printer"] floating enable
 for_window [class="Xfce4-settings-manager" instance="xfce4-settings-manager"] floating enable
 for_window [class="Lxtask" instance="lxtask"] floating enable
