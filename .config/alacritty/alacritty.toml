@@ -37,6 +37,6 @@ blur = true
 resize_increments = false
 
 [window.padding]
-x = 3
-y = 1
+x = 20
+y = 20
 
