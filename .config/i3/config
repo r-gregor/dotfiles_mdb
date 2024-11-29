@@ -266,12 +266,15 @@ bindsym $alt+t exec --no-startup-id /home/rgregor/.local/bin/floatings_rofi
 
 # 20240930 -- borders
 # default_border pixel  2
-default_border pixel 0
+default_border pixel 2
 
-client.focused              #353439 #ffffff #7B9F35
-client.unfocused            #353439 #333333 #7B9F35
-client.focused_inactive     #353439 #ffffff #7B9F35
-client.urgent               #353439 #ffffff #7B9F35
+set $transp #00000000
+
+# class                     border    background    text     indicator   child_border
+client.focused              #57a4df   #57a4df       #57a4df  #57a4df    #57a4df
+client.unfocused            #000000   #333333       #7B9F35  #7B9F35    #transp
+client.focused_inactive     #000000   #ffffff       #7B9F35  #7B9F35    #transp
+client.urgent               #353439   #ffffff       #7B9F35  #7B9F35    #transp
 focus_follows_mouse yes
 hide_edge_borders both
 
