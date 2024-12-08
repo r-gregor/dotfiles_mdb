@@ -11,6 +11,9 @@ HISTCONTROL=ignoreboth
 HISTSIZE=10000
 HISTFILESIZE=2000
 
+export PROMPT_DIRTRIM=3
+
+
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 case "$TERM" in
