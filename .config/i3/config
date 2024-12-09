@@ -250,6 +250,7 @@ bindsym $alt+r exec --no-startup-id /home/rgregor/.local/bin/logout_menu_rofi
 bindsym $alt+s exec --no-startup-id /home/rgregor/.local/bin/binds_from_i3
 bindsym $alt+f exec --no-startup-id /home/rgregor/.local/bin/floatings_dmn
 bindsym $alt+t exec --no-startup-id /home/rgregor/.local/bin/floatings_rofi
+bindsym $alt+z exec --no-startup-id /usr/bin/zenity --calendar
 
 # enable enter password window
 # window after sudo apt install lxpolkit
