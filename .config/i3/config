@@ -255,6 +255,7 @@ bindsym $alt+z exec --no-startup-id /usr/bin/zenity --calendar
 # enable enter password window
 # window after sudo apt install lxpolkit
 # !! # exec_always --no-startup-id lxpolkit
+exec_always --no-startup-id lxpolkit
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
