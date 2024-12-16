@@ -177,14 +177,10 @@ label-connected = %{F#F0C674}󰌗 %{F-} %local_ip%
 type = internal/date
 interval = 1
 
-# date = %H:%M
-date = %Y-%m-%d %H:%M:%S
+date = %H:%M
 date-alt = %Y-%m-%d %H:%M:%S
 
-# label = %date%
-# from: https://www.reddit.com/r/Polybar/comments/13dvsqp/how_to_override_the_date_module_mouse_click/
-# after installing gsimplecal
-label = " %{A1:gsimplecal:}%date%%{A}"
+label = %date%
 label-foreground = ${colors.primary}
 
 [settings]
