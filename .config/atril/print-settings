@@ -26,13 +26,13 @@ cups-CorrectionColor=EPSONVivid
 cups-YellowValue=0
 printer=Brother_DCP_L3520CDW_series_USB
 cups-SizeWatermark=70
-atril-print-setting-page-scale=0
+atril-print-setting-page-scale=2
 cups-GammaValue=2.2
 cups-MirrorImage=Off
 cups-BrightnessValue=0
 cups-job-sheets=none,none
 cups-OutputPaper=A4
-cups-number-up=1
+cups-number-up=2
 
 cups-ColorModel=RGB
 default-source=Auto
@@ -42,6 +42,11 @@ cups-InputSlot=Auto
 output-bin=FaceDown
 cups-print-scaling=auto
 cups-Duplex=None
+
+cups-cupsPrintQuality=Normal
+
+cups-number-up-layout=lrtb
+number-up-layout=lrtb
 
 [Page Setup]
 PPDName=A4
