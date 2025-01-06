@@ -24,7 +24,7 @@ cups-MagentaValue=0
 cups-ScaleRatio=100
 cups-CorrectionColor=EPSONVivid
 cups-YellowValue=0
-printer=Brother_DCP_L3520CDW_series_USB
+printer=Brother_DCP_L3520CDW_series@BRWE86538E306E8.local
 cups-SizeWatermark=70
 atril-print-setting-page-scale=2
 cups-GammaValue=2.2
@@ -32,7 +32,7 @@ cups-MirrorImage=Off
 cups-BrightnessValue=0
 cups-job-sheets=none,none
 cups-OutputPaper=A4
-cups-number-up=2
+cups-number-up=1
 
 cups-ColorModel=RGB
 default-source=Auto
