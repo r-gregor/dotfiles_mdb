@@ -6,6 +6,7 @@ esac
 
 shopt -s histappend
 shopt -s checkwinsize
+shopt -s direxpand # 20250220
 
 HISTCONTROL=ignoreboth
 HISTSIZE=10000
