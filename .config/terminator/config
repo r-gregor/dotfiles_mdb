@@ -1,0 +1,38 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = UbuntuMono Nerd Font 11
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    use_system_font = False
+  [[rgregor]]
+    background_darkness = 0.98
+    background_type = transparent
+    cursor_color = "#a40000"
+    cursor_color_fg = False
+    font = Iosevka 14
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 165:75
+      maximised = False
+      fullscreen = False
+      size = 1255, 698
+      title = rgregor@jbez0rg: ~
+      last_active_term = 2e4c1825-e05c-4d4e-9eba-ed71dc368b4c
+      last_active_window = True
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = rgregor
+      uuid = 2e4c1825-e05c-4d4e-9eba-ed71dc368b4c
+[plugins]

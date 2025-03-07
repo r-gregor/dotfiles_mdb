@@ -1,0 +1,69 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/Test1">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Test1" projectWorkspaceId="1sPG07MhXvd5PmKZ1b8fKRy1wUy">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7142.45" />
+              <option name="buildTimestamp" value="1619777791261" />
+              <frame x="105" y="25" width="1400" height="835" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1620766587865" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PYTHON_d_testing/pd064_sqlite_test_20210323/n_V2">
+          <value>
+            <RecentProjectMetaInfo frameTitle="n_V2" projectWorkspaceId="1szv6cy8gcy6O41Qvg4O9Rgwy41">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7142.45" />
+              <option name="buildTimestamp" value="1619777797899" />
+              <frame x="142" y="47" width="1400" height="835" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1621888059098" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/JAVA_d_testing/jd076_jdbc-sqlite-test_20210329">
+          <value>
+            <RecentProjectMetaInfo frameTitle="jd076_jdbc-sqlite-test_20210329" projectWorkspaceId="1szuJtwBzGtto86WRGaOrgL8K3G">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7142.45" />
+              <option name="buildTimestamp" value="1619777797899" />
+              <frame x="105" y="25" width="1400" height="835" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1621888180785" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/efekstest">
+          <value>
+            <RecentProjectMetaInfo frameTitle="efekstest – Main.java" projectWorkspaceId="1t2PymfpAqKLCb07SBEPSGNCF4d">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7142.45" />
+              <option name="buildTimestamp" value="1619777773310" />
+              <frame x="-5" y="20" width="1610" height="885" extendedState="6" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1621964470439" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/HelloFX">
+          <value>
+            <RecentProjectMetaInfo frameTitle="HelloFX – Main.java" opened="true" projectWorkspaceId="1tBQ1A2bgpktCa2TBnRKXiRcCqU">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7142.45" />
+              <option name="buildTimestamp" value="1619777805917" />
+              <frame x="-5" y="20" width="1610" height="885" extendedState="6" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1622239784770" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/IdeaProjects" />
+  </component>
+</application>

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/rgregor'
+let g:netrw_dirhist_1='/home/rgregor/majstaf/coding/BASH_d/BASH_d_testing/makefile_test_project_20210604/makefiletest_old'
+let g:netrw_dirhist_0='/home/rgregor/majstaf/BRISI/pd000_sha256_20210418/hashlib-sha256-tets.py'
+let g:netrw_dirhist_9='/home/rgregor/majstaf/coding/JAVA_d/JAVA_d_testing/jd010_pdtk_V7_20190704'
+let g:netrw_dirhist_8='/home/rgregor/OLDHDD/rgregor/java/jars/gui'
+let g:netrw_dirhist_7='/home/rgregor/Documents'
+let g:netrw_dirhist_6='/home/rgregor'
+let g:netrw_dirhist_5='/home'
+let g:netrw_dirhist_4='/home/rgregor/majstaf/coding/00_ukazi'
+let g:netrw_dirhist_3='/home/rgregor/majstaf/coding'

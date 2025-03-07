@@ -1,0 +1,19 @@
+" .dot_vimrc_monochrome
+"DOMA: LAST CHANGE 20240206
+
+source $HOME/.vimrc
+
+" 20240116
+" custom color settings for TAB and SPACE chars
+:hi Whitespacechar ctermfg=DarkGray
+:hi Tabspacechar   ctermfg=DarkGray
+:match Whitespacechar / \+$/
+:match Tabspacechar /\t/
+
+" from Plug 'fxn/vim-monochrome'
+let g:monochrome_italic_comments = 1
+colorscheme monochrome
+"
+hi Normal ctermbg='000000' guibg='#000000'
+
+let g:rainbow_active = 0

@@ -1,0 +1,17 @@
+source ~/.tmux.conf
+
+new -s START
+rename-window W1
+# send-keys "/usr/local/bin/zze" Enter
+
+new-window -t START:1
+rename-window W2
+split-window -v
+select-pane -t 0
+select-window -t W1
+
+new-window -t START:2
+rename-window W3
+
+select-window -t W1
+

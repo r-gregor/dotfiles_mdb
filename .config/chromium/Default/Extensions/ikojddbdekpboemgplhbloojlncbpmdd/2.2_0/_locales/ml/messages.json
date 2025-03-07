@@ -1,0 +1,20 @@
+{
+   "addToBlacklist": {
+      "message": "Add to blacklist"
+   },
+   "disable": {
+      "message": "disable"
+   },
+   "enable": {
+      "message": "enable"
+   },
+   "extDesc": {
+      "message": "ഇരുണ്ട തീം സ്യൂട്ട് - ജനപ്രിയ സൈറ്റുകളിൽ വേണ്ടി ഇരുണ്ട മോഡ് നിങ്ങളുടെ കണ്ണുകൾ സംരക്ഷിക്കാൻ"
+   },
+   "extName": {
+      "message": "Dark theme suite"
+   },
+   "removeFromBlacklist": {
+      "message": "Remove from blacklist"
+   }
+}

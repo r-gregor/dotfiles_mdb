@@ -1,0 +1,20 @@
+{
+   "extDesc": {
+      "message": "Mørkt tema suite - beskytte øynene med mørke modus for populære nettsteder"
+   },
+   "extName": {
+      "message": "Dark theme suite"
+   },
+   "enable": {
+      "message": "enable"
+   },
+   "disable": {
+      "message": "disable"
+   },
+   "addToBlacklist": {
+      "message": "Add to blacklist"
+   },
+   "removeFromBlacklist": {
+      "message": "Remove from blacklist"
+   }
+}
