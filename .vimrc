@@ -94,10 +94,10 @@ noremap ,stc :so ~/.vimrc <bar> :set syntax=c<CR>
 noremap ,stj :so ~/.vimrc <bar> :set syntax=java<CR>
 
 " ----------------- ABBREVIATIONS 01 ---------------------------
-ab sbng #! /usr/bin/env bash<cr><tab>
-ab pt3 #! /usr/bin/env python3<cr># -*- coding: utf-8 -*-<cr><cr><esc>:so ~/.vimrc | :set syntax=python
+ab sbng #! /usr/bin/env bash<cr><cr><esc>:so ~/.vimrc <BAR> :set syntax=bash
+ab pt3 #! /usr/bin/env python3<cr># -*- coding: utf-8 -*-<cr><cr><esc>:so ~/.vimrc <BAR> :set syntax=python
 ab sout System.out.println(
-ab zst const std = @import("std");<cr><cr>pub fn main() !void {<cr>const out = std.io.getStdOut().writer();<cr>const in = std.io.getStdiIn().reader();<cr><cr>try out.print("I'm Alive!\n", .{});<cr><cr>}<cr><esc>:so ~/.vimrc | :set syntax=zig
+ab zst const std = @import("std");<cr><cr>pub fn main() !void {<cr>const out = std.io.getStdOut().writer();<cr>const in = std.io.getStdiIn().reader();<cr><cr>try out.print("I'm Alive!\n", .{});<cr><cr>}<cr><esc>:so ~/.vimrc <BAR> :set syntax=zig
 "
 " ----------------- ENCLOSING BRACKETS/SQUARE/CURLY ------------
 inoremap ${{ ${}<ESC>hli
@@ -108,8 +108,8 @@ inoremap [[[ [[]]<ESC>hli
 "
 " ------------- C ABBREVIATIONS ------------------------------
 " update 20250321
-ab cstv #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(void)<right> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc | :set syntax=c
-ab cst #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(int argc, char **argv)<right> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc | :set syntax=c
+ab cstv #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(void)<right> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc <BAR> :set syntax=c
+ab cst #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(int argc, char **argv)<right> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc <BAR> :set syntax=c
 ""
 " break line at position 110 chars
 " 0110lbikba
