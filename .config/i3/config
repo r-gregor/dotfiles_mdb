@@ -245,11 +245,11 @@ exec --no-startup-id feh --randomize --bg-fill /home/rgregor/majstaf/majvolpejpe
 bindsym $mod+c exec --no-startup-id feh /home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2/* --recursive --randomize --bg-fill &
 
 # dmenu logout menu
-bindsym $alt+d exec --no-startup-id /home/rgregor/.local/bin/logout_menu_dmn
-bindsym $alt+r exec --no-startup-id /home/rgregor/.local/bin/logout_menu_rofi
-bindsym $alt+s exec --no-startup-id /home/rgregor/.local/bin/binds_from_i3
-bindsym $alt+f exec --no-startup-id /home/rgregor/.local/bin/floatings_dmn
-bindsym $alt+t exec --no-startup-id /home/rgregor/.local/bin/floatings_rofi
+bindsym $alt+d exec --no-startup-id /home/rgregor/.local/bin/logout-menu-dmn
+bindsym $alt+r exec --no-startup-id /home/rgregor/.local/bin/logout-menu-rofi
+bindsym $alt+s exec --no-startup-id /home/rgregor/.local/bin/binds-from-i3
+bindsym $alt+f exec --no-startup-id /home/rgregor/.local/bin/floatings-dmn
+bindsym $alt+t exec --no-startup-id /home/rgregor/.local/bin/floatings-rofi
 bindsym $alt+z exec --no-startup-id /usr/bin/zenity --calendar
 bindsym $alt+w exec --no-startup-id /usr/bin/thunar
 
