@@ -64,3 +64,6 @@ source /home/rgregor/.config/alacritty/extra/completions/alacritty.bash
 
 # eval "$(starship init bash)"
 
+#20250425
+eval "$(zoxide init bash)"
+
