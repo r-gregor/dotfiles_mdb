@@ -290,18 +290,18 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'fxn/vim-monochrome'
 
 " 20250312
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
 
 call plug#end()
 
-if executable('bash-language-server')
-  au User lsp_setup call lsp#register_server({
-        \ 'name': 'bash-language-server',
-        \ 'cmd': {server_info->['bash-language-server', 'start']},
-        \ 'allowlist': ['sh', 'bash'],
-        \ })
-endif
+" if executable('bash-language-server')
+"   au User lsp_setup call lsp#register_server({
+"         \ 'name': 'bash-language-server',
+"         \ 'cmd': {server_info->['bash-language-server', 'start']},
+"         \ 'allowlist': ['sh', 'bash'],
+"         \ })
+" endif
 
 nnoremap <F5> :NERDTreeToggle<CR>
 
