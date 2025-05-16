@@ -417,3 +417,10 @@ hi Normal ctermbg='131926' guibg='#131926'
 " 20240314
 hi Normal ctermbg=NONE guibg=NONE
 
+" 20250515
+" copy http link into the [number] holder for the link after lyxd-ed document
+" 1 - go inside '[' ']'
+" 2 - <c-o> to go to coresponding link at the bottom
+" 3 - pres ,lc to do the magic ...
+noremap ,lc fhvg_y<C-o>ci[<C-r>0<ESC>
+
