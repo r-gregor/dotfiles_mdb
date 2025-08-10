@@ -61,6 +61,8 @@ tiling_drag modifier titlebar
 
 # start browser (Firefox)
 bindsym $mod+b exec --no-startup-id /usr/bin/firefox
+bindsym $mod+$alt+b workspace number $ws2; exec --no-startup-id /usr/bin/firefox
+bindsym $mod+$alt+x exec i3-msg worskpace number 2; exec /usr/bin/firefox
 bindsym $mod+g exec --no-startup-id /usr/bin/google-chrome-stable
 bindsym $mod+Return exec --no-startup-id /usr/local/bin/alacritty
 bindsym $alt+Return exec --no-startup-id /usr/bin/kitty
@@ -252,6 +254,8 @@ bindsym $alt+f exec --no-startup-id /home/rgregor/.local/bin/floatings-dmn
 bindsym $alt+t exec --no-startup-id /home/rgregor/.local/bin/floatings-rofi
 bindsym $alt+z exec --no-startup-id /usr/bin/zenity --calendar
 bindsym $alt+w exec --no-startup-id /usr/bin/thunar
+bindsym $mod+$alt+w workspace number $ws3; exec --no-startup-id /usr/bin/thunar
+bindsym $mod+$alt+d workspace number $ws3; exec --no-startup-id /usr/bin/doublecmd
 
 # enable enter password window
 # window after sudo apt install lxpolkit
