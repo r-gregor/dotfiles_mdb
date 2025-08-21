@@ -61,12 +61,13 @@ tiling_drag modifier titlebar
 
 # start browser (Firefox)
 bindsym $mod+b exec --no-startup-id /usr/bin/firefox
-bindsym $mod+$alt+b workspace number $ws2; exec --no-startup-id /usr/bin/firefox
-bindsym $mod+$alt+x exec i3-msg worskpace number 2; exec /usr/bin/firefox
+bindsym $mod+$alt+b exec --no-startup-id "i3-msg 'workspace number 2; exec /usr/bin/firefox; workspace number 1'"
+bindsym $mod+$alt+t exec --no-startup-id "i3-msg 'workspace number 3; exec /usr/bin/lxtask; workspace number 1'"
 bindsym $mod+g exec --no-startup-id /usr/bin/google-chrome-stable
 bindsym $mod+Return exec --no-startup-id /usr/local/bin/alacritty
 bindsym $alt+Return exec --no-startup-id /usr/bin/kitty
 # bindsym $mod+Return exec --no-startup-id /usr/bin/kitty
+exec i3-msg "worskpace number 1"
 
 # kill focused window
 bindsym $mod+q kill
