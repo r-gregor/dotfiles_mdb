@@ -67,3 +67,8 @@ source /home/rgregor/.config/alacritty/extra/completions/alacritty.bash
 #20250425
 eval "$(zoxide init bash)"
 
+export MDBGIT_STATUS_REPORTS="${HOME}/.tmp/MDBGIT_STATUS_REPORTS"
+export MDBGIT_TPUSH_REPORTS="${HOME}/.tmp/MDBGIT_TPUSH_REPORTS"
+export TESTING_STATUS_REPORTS="${HOME}/.tmp/TESTING_STATUS_REPORTS"
+export TESTING_TPUSH_REPORTS="${HOME}/.tmp/TESTING_TPUSH_REPORTS"
+
