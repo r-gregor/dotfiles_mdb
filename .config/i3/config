@@ -279,7 +279,8 @@ default_border pixel 2
 set $transp #00000000
 
 # class                     border    background    text     indicator   child_border
-client.focused              #57a4df   #57a4df       #57a4df  #57a4df    #57a4df
+# client.focused              #57a4df   #57a4df       #57a4df  #57a4df    #57a4df
+client.focused              #57a4df   #57a4df       #000000  #57a4df    #57a4df
 client.unfocused            #000000   #333333       #7B9F35  #7B9F35    #transp
 client.focused_inactive     #000000   #ffffff       #7B9F35  #7B9F35    #transp
 client.urgent               #353439   #ffffff       #7B9F35  #7B9F35    #transp
