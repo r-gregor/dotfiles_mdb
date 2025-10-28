@@ -29,6 +29,9 @@ set wildmode=list:longest,full
 set hidden
 set path+=**
 set background=dark
+" for gq 20251028
+set textwidth=110
+set formatoptions-=t
 
 " added 20231117: fix for disapearing bg color when scrolling!
 let &t_ut=''
