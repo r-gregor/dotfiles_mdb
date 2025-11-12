@@ -66,6 +66,7 @@ bindsym $mod+$alt+t exec --no-startup-id "i3-msg 'workspace number 3; exec /usr/
 bindsym $mod+g exec --no-startup-id /usr/bin/google-chrome-stable
 bindsym $mod+Return exec --no-startup-id /usr/local/bin/alacritty
 bindsym $alt+Return exec --no-startup-id /usr/bin/kitty
+bindsym $mod+u exec --no-startup-id /usr/bin/urxvt
 # bindsym $mod+Return exec --no-startup-id /usr/bin/kitty
 exec i3-msg "worskpace number 1"
 
