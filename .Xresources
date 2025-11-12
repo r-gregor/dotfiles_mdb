@@ -21,10 +21,10 @@ URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
 
-!!! ! added 20251112 for font resize:
-!!! ! from: https://github.com/simmel/urxvt-resize-font
-!!! URxvt.perl-ext-common: default,tabbed,matcher,resize-font,-tabbed
-!!!
+! added 20251112 for font resize:
+! from: https://github.com/simmel/urxvt-resize-font
+urxvt.perl-ext-common: resize-font
+
 !!! URxvt.keysym.C-minus:     resize-font:smaller
 !!! URxvt.keysym.C-plus:      resize-font:bigger
 !!! URxvt.keysym.C-equal:     resize-font:reset

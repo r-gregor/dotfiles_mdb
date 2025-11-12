@@ -1,5 +1,5 @@
 #import = ["/home/rgregor/.config/alacritty/dracula_custom-1.toml"]
-import = ["/home/rgregor/.config/alacritty/dracula.toml"]
+general.import = ["/home/rgregor/.config/alacritty/dracula.toml"]
 
 [font]
 size = 12.0
