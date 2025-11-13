@@ -55,3 +55,11 @@ URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
+!Transparency added 20251113
+!from: https://ctkarch.org/documentation/tutorials/tuto.php?page=urxvt-transpa.xml
+!real transparency
+urxvt*depth: 32urxvt*depth: 32
+
+! same color as for background in theme ...
+URxvt.background: [90]#141c21
+
