@@ -1,8 +1,10 @@
 !! Colorscheme
 
 ! added 20251112
-#include "./.urxvt-colors-default-1"
-!#include "./.urxvt-colors-Dracula-1"
+#include "./.urxvt/themes/urxvt-colors-default-1"
+!#include "./.urxvt/themes/urxvt-colors-Dracula-1"
+!#include "./.urxvt/themes/urxvt-colors-catppuccin-mocha"
+
 !! URxvt Appearance
 URxvt.font: xft:UbuntuMono Nerd Font Mono:style=Regular:size=16:antialias=true
 !URxvt.boldFont: xft:UbuntuMono Nerd Font:style=Bold:size=14:antialias=true
