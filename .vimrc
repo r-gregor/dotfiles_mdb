@@ -427,3 +427,7 @@ hi Normal ctermbg=NONE guibg=NONE
 " 3 - pres ,lc to do the magic ...
 noremap ,lc fhvg_y<C-o>ci[<C-r>0<ESC>
 
+" 20251114
+" open all buffers into separate tabs
+map ,bt :bufdo tab split<CR><CR>
+
