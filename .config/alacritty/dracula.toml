@@ -9,6 +9,10 @@
 
 [colors.primary]
 
+foreground = "#b3bebf"
+bright_foreground = "#ffffff"
+background = "#131926"
+# ---
 #background = "#282a36"
 #foreground = "#f8f8f2"
 #background = "#070913"
@@ -18,12 +22,9 @@
 #background = "#262530"
 #background = "#2b2a35"
 #background = "#262933"
-background = "#131926"
-foreground = "#b3bebf"
 # foreground = "#8693ad"
 # foreground = "#b1b1b1"
 # foreground = "#dddddd"
-bright_foreground = "#ffffff"
 
 [colors.cursor]
 
