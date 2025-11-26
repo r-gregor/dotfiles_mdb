@@ -6,7 +6,7 @@
 !#include "./.urxvt/themes/urxvt-colors-catppuccin-mocha"
 
 !! URxvt Appearance
-URxvt.font: xft:UbuntuMono Nerd Font Mono:style=Regular:size=16:antialias=true
+URxvt.font: xft:UbuntuMono Nerd Font Mono:style=Regular:size=18:antialias=true
 !URxvt.boldFont: xft:UbuntuMono Nerd Font:style=Bold:size=14:antialias=true
 !URxvt.italicFont: xft:UbuntuMono Nerd Font:style=Italic:size=14:antialias=true
 !URxvt.boldItalicfont: xft:UbuntuMono Nerd Font:style=Bold Italic:size=14:antialias=true
