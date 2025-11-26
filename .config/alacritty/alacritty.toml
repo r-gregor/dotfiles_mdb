@@ -1,5 +1,5 @@
 #import = ["/home/rgregor/.config/alacritty/dracula_custom-1.toml"]
-general.import = ["/home/rgregor/.config/alacritty/dracula.toml"]
+general.import = ["/home/rgregor/.config/alacritty/dracula_custom-3.toml"]
 
 [font]
 size = 14.0
@@ -39,4 +39,8 @@ resize_increments = false
 [window.padding]
 x = 10
 y = 10
+
+[cursor]
+style.shape = "Block"
+style.blinking = "Always"
 
