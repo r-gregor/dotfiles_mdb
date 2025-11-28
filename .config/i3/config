@@ -275,16 +275,32 @@ exec_always --no-startup-id lxpolkit
 
 # 20240930 -- borders
 # default_border pixel  2
-default_border pixel 2
+default_border pixel 3
 
 set $transp #00000000
 
+# set $amberc #FCA15B
+# set $amberc #F17030
+# set $amberc #EF8D58
+# set $amberc #FCA15B
+# set $amberc #F9B962
+# set $amberc #DF9238
+# set $amberc #F1BB95
+  set $amberc #E4B283
+# set $amberc #ECBC6F
+# set $amberc #FFC662
+# set $amberc #F9BB65
+# set $amberc #FABD76
+# set $amberc #FFCE9F
+
+
 # class                     border    background    text     indicator   child_border
-# client.focused              #57a4df   #57a4df       #57a4df  #57a4df    #57a4df
-client.focused              #57a4df   #57a4df       #000000  #57a4df    #57a4df
-client.unfocused            #000000   #333333       #7B9F35  #7B9F35    #transp
-client.focused_inactive     #000000   #ffffff       #7B9F35  #7B9F35    #transp
-client.urgent               #353439   #ffffff       #7B9F35  #7B9F35    #transp
+# client.focused            #57a4df   #57a4df       #57a4df  #57a4df     #57a4df
+# client.focused            #57a4df   #57a4df       #000000  #57a4df     #57a4df
+client.focused              $amberc   $amberc       #000000  $amberc     $amberc
+client.unfocused            #000000   #333333       #7B9F35  #7B9F35     $transp
+client.focused_inactive     #000000   #ffffff       #7B9F35  #7B9F35     $transp
+client.urgent               #353439   #ffffff       #7B9F35  #7B9F35     $transp
 focus_follows_mouse yes
 hide_edge_borders both
 
