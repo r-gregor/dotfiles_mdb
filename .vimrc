@@ -367,7 +367,8 @@ nnoremap <Space>4 :s/^\$ /$> /<CR><CR>
 vnoremap <Space>4 :s/^\$ /$> /<CR><CR>
 
 nnoremap <leader>n :NERDTree<CR>
-nnoremap <leader>f :FZF<CR>
+nnoremap <leader>ff :FZF<CR>
+nnoremap <leader>fe :FZF -e<CR>
 
 " added 20220926
 " replaces tabs to 4 spaces in visual block
@@ -434,4 +435,8 @@ map ,bt :bufdo tab split<CR><CR>
 " 20251127
 " table row dividers
 noremap ,tr 0yyjp}P<ESC>j
+
+" 20251205
+" move '{' after 'func() '
+noremap <space>f jddkA {<ESC>j
 
