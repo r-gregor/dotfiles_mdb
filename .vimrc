@@ -440,3 +440,11 @@ noremap ,tr 0yyjp}P<ESC>j
 " move '{' after 'func() '
 noremap <space>f jddkA {<ESC>j
 
+" 20251210
+noremap <space>ss  :set syntax=<CR>
+noremap <space>ssc :set syntax=c<CR>
+noremap <space>ssj :set syntax=java<CR>
+noremap <space>ssp :set syntax=python<CR>
+noremap <space>sst :set syntax=text<CR>
+noremap <space>ssg :set syntax=go<CR>
+
