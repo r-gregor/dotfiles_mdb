@@ -7,6 +7,7 @@ esac
 shopt -s histappend
 shopt -s checkwinsize
 shopt -s direxpand # 20250220
+shopt -s globstar  # 20251211
 
 HISTCONTROL=ignoreboth
 HISTSIZE=10000
