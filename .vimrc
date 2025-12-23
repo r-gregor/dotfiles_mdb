@@ -448,3 +448,8 @@ noremap <space>ssp :set syntax=python<CR>
 noremap <space>sst :set syntax=text<CR>
 noremap <space>ssg :set syntax=go<CR>
 
+" 20251223
+" select whole 'main() { ... }' block, formate it with '=' and
+" replace 5 spaces with tabs
+nnoremap <space>= 0Vf{%=gv:s/\(\t\+\) \+/\1/g<CR>
+
