@@ -32,6 +32,7 @@ set background=dark
 " for gq 20251028
 set textwidth=110
 set formatoptions-=t
+set viminfo='100,f1                 "20260210: remember local and global marks for 100 files
 
 " added 20231117: fix for disapearing bg color when scrolling!
 let &t_ut=''
@@ -452,8 +453,15 @@ nnoremap <space>= 0Vf{%=gv:s/\(\t\+\) \+/\1/g<CR>
 " nnoremap <space>v :so ~/.vimrc <BAR> set syntax=c<CR>
 nnoremap <space>v :so ~/.vimrc <BAR> set syntax=c <BAR> :noh<CR>
 
-" 20260209
+" 20260210
 " move line under the cursor inside []
 " move selected text into []
 nnoremap ,sb 0vg_xi[<c-r>"]<esc>j<cr>
 vnoremap ,sb xi[]<ESC>h""p<ESC>
+
+" 20260210 change buffer to file from list
+" from:
+" vim-working-with-buffers-multif-5ppp-20260210.txt
+" https://builtin.com/articles/working-with-buffers-in-vim
+nnoremap <Leader>b :buffers<CR>:buffer<Space>
+
