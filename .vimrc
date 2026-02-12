@@ -465,3 +465,8 @@ vnoremap ,sb xi[]<ESC>h""p<ESC>
 " https://builtin.com/articles/working-with-buffers-in-vim
 nnoremap <Leader>b :buffers<CR>:buffer<Space>
 
+" 20260211
+" search in vim's file edit histroy and open it for edit/view
+" must enter colon ':' and add a line number
+nnoremap <leader>oo :oldfiles<CR>e #<
+
