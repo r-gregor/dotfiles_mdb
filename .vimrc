@@ -470,3 +470,7 @@ nnoremap <Leader>b :buffers<CR>:buffer<Space>
 " must enter colon ':' and add a line number
 nnoremap <leader>oo :oldfiles<CR>e #<
 
+" 20260219 replace leading 4spaces to tabs
+nnoremap <space>t :%s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+vnoremap <space>t :s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+
