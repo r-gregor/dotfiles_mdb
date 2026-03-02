@@ -4,10 +4,27 @@ case $- in
       *) return;;
 esac
 
+# 20260227
+# enable globstar (** matching)
+shopt -s globstar
+
+# 20260227
+# enable expansions of directories as env variables
+# vim $DIRNAME/<tab><tab> (must insert trailnig '/')
+shopt -s direxpand
+
 shopt -s histappend
 shopt -s checkwinsize
 shopt -s direxpand # 20250220
-shopt -s globstar  # 20251211
+
+# 20260227
+# enable globstar (** matching)
+shopt -s globstar
+
+# 20260227
+# enable expansions of directories as env variables
+# vim $DIRNAME/<tab><tab> (must insert trailnig '/')
+shopt -s direxpand
 
 HISTCONTROL=ignoreboth
 HISTSIZE=10000
