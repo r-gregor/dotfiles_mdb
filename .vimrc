@@ -438,6 +438,7 @@ noremap <space>f jddkA {<ESC>j
 
 " 20251210
 noremap <space>ss  :set syntax=<CR>
+noremap <space>ssh  :set syntax=sh<CR>
 noremap <space>ssc :set syntax=c<CR>
 noremap <space>ssj :set syntax=java<CR>
 noremap <space>ssp :set syntax=python<CR>
@@ -473,4 +474,8 @@ nnoremap <leader>oo :oldfiles<CR>e #<
 " 20260219 replace leading 4spaces to tabs
 nnoremap <space>t :%s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
 vnoremap <space>t :s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+
+" 20260311:
+" replace single quote inside words with apostrophe command:
+nnoremap <space>9 :%s/\([[:alpha:]]\)'\([[:alpha:]]\)/\1´\2/g<CR><BAR>:noh<CR>
 
