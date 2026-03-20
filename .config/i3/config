@@ -274,8 +274,8 @@ exec_always --no-startup-id lxpolkit
 #       }
 
 # 20240930 -- borders
-# default_border pixel  2
-default_border pixel 3
+default_border pixel  0
+# default_border pixel 3
 
 set $transp #00000000
 

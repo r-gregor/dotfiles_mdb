@@ -1,7 +1,7 @@
 !! Colorscheme
 
 ! added 20251112
-#include "./.urxvt/themes/urxvt-colors-default-1"
+#include "./.urxvt/themes/urxvt-colors-default-2"
 !#include "./.urxvt/themes/urxvt-colors-Dracula-1"
 !#include "./.urxvt/themes/urxvt-colors-catppuccin-mocha"
 
