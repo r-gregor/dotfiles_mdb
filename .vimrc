@@ -323,7 +323,7 @@ nnoremap <leader>s :s/ *;*$/;/<esc>j
 
 " ----------------- CROSSHAIR LOCATION ------------------------
 set cursorline
-" set cursorcolumn
+set cursorcolumn
 " hi CursorColumn cterm=NONE ctermbg=red ctermfg=white
 " hi CursorColumn cterm=NONE ctermbg=NONE ctermfg=red
 " hi CursorLine cterm=NONE cterm=underline ctermbg=NONE
