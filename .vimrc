@@ -29,10 +29,11 @@ set wildmode=list:longest,full
 set hidden
 set path+=**
 set background=dark
-" for gq 20251028
-set textwidth=110
-set formatoptions-=t
 set viminfo='100,f1                 "20260210: remember local and global marks for 100 files
+
+set textwidth=110                   " for gq 20251028
+set formatoptions-=t                " for gq 20251028
+set formatoptions+=l                " for gq 20251028
 
 " added 20231117: fix for disapearing bg color when scrolling!
 let &t_ut=''
@@ -487,5 +488,9 @@ vnoremap ,rt :retab!<CR>
 " move selected text between '', or between ""
 vnoremap <space>sq xi''<ESC>h""p<ESC>
 vnoremap <space>dq xi""<ESC>h""p<ESC>
-"
+
+" 20260519
+" remove '[...]' in current line
+nnoremap ,ds :s/\[.\+\]//g<CR>:noh<CR>
+vnoremap ,ds :s/\[.\+\]//g<CR>:noh<CR>
 
