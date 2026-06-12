@@ -472,9 +472,15 @@ nnoremap <Leader>b :buffers<CR>:buffer<Space>
 " must enter colon ':' and add a line number
 nnoremap <leader>oo :oldfiles<CR>e #<
 
-" 20260219 replace leading 4spaces to tabs
-nnoremap <space>t :%s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
-vnoremap <space>t :s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+" --- REPLACE LEADING 4 SPACES TO TABS ---
+" 20260219 replace leading 4 spaces to tabs
+nnoremap <space>4t :%s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+vnoremap <space>4t :s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+
+" --- REPLACE LEADING 2 SPACES TO TABS ---
+" 20260612 replace leading 2 spaces to tabs
+nnoremap <space>2t :%s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
+vnoremap <space>2t :s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
 
 " 20260311:
 " replace single quote inside words with apostrophe command:
