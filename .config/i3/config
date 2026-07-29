@@ -156,17 +156,29 @@ set $ws10 "10"
 # alias
 set $dofeh exec --no-startup-id feh --randomize --bg-fill /home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2
 
-# switch to workspace
-bindsym $mod+1 workspace number $ws1; $dofeh
-bindsym $mod+2 workspace number $ws2; $dofeh
-bindsym $mod+3 workspace number $ws3; $dofeh
-bindsym $mod+4 workspace number $ws4; $dofeh
-bindsym $mod+5 workspace number $ws5; $dofeh
-bindsym $mod+6 workspace number $ws6; $dofeh
-bindsym $mod+7 workspace number $ws7; $dofeh
-bindsym $mod+8 workspace number $ws8; $dofeh
-bindsym $mod+9 workspace number $ws9; $dofeh
-bindsym $mod+0 workspace number $ws10; $dofeh
+# switch to workspace and wallpaper
+# bindsym $mod+1 workspace number $ws1; $dofeh
+# bindsym $mod+2 workspace number $ws2; $dofeh
+# bindsym $mod+3 workspace number $ws3; $dofeh
+# bindsym $mod+4 workspace number $ws4; $dofeh
+# bindsym $mod+5 workspace number $ws5; $dofeh
+# bindsym $mod+6 workspace number $ws6; $dofeh
+# bindsym $mod+7 workspace number $ws7; $dofeh
+# bindsym $mod+8 workspace number $ws8; $dofeh
+# bindsym $mod+9 workspace number $ws9; $dofeh
+# bindsym $mod+0 workspace number $ws10; $dofeh
+
+# switch to workspace - without switching wallpaper
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
