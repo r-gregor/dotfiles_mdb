@@ -99,7 +99,10 @@ noremap ,stc :so ~/.vimrc <bar> :set syntax=c<CR>
 noremap ,stj :so ~/.vimrc <bar> :set syntax=java<CR>
 
 " ----------------- ABBREVIATIONS 01 ---------------------------
-ab sbng #! /usr/bin/env bash<cr><cr><esc>:so ~/.vimrc <BAR> :set syntax=bash
+" ab sbng #! /usr/bin/env bash<cr><cr><esc>:so ~/.vimrc <BAR> :set syntax=bash
+" updated 20250807: insert datestamp
+ab sbng #! /usr/bin/env bash<cr># fname: <c-r>%<cr># <c-r>=strftime('%Y%m%d')<cr> v1<cr># ---<cr><esc>:so ~/.vimrc <BAR> :set syntax=bash
+
 ab pt3 #! /usr/bin/env python3<cr># -*- coding: utf-8 -*-<cr><cr><esc>:so ~/.vimrc <BAR> :set syntax=python
 ab sout System.out.println(
 ab zst const std = @import("std");<cr><cr>pub fn main() !void {<cr>const out = std.io.getStdOut().writer();<cr>const in = std.io.getStdiIn().reader();<cr><cr>try out.print("I'm Alive!\n", .{});<cr><cr>}<cr><esc>:so ~/.vimrc <BAR> :set syntax=zig
@@ -500,3 +503,10 @@ vnoremap <space>dq xi""<ESC>h""p<ESC>
 nnoremap ,ds :s/\[.\+\]//g<CR>:noh<CR>
 vnoremap ,ds :s/\[.\+\]//g<CR>:noh<CR>
 
+" 20260807
+" insert datestamp 'YYYYmmdd'
+nnoremap ,dt "=strftime('%Y%m%d')<cr>P<cr>
+inoremap ,dt <c-r>=strftime('%Y%m%d')<cr>
+vnoremap ,dt <c-r>=strftime('%Y%m%d')<cr>
+"
+"
