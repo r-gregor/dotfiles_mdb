@@ -320,3 +320,16 @@ hide_edge_borders both
 # polybar 20241110
 exec --no-startup-id /home/rgregor/.config/polybar/launch.sh
 
+# PrintScreen 20260821
+# ----------------------------------------------------------------------------------------------------------------
+# Add this to your i3 config to take a screenshot (selection) and save it to the clipboard just by pressing PrtSc!
+# The resulting file will have this format: screenshot_02-Dec-2021_13-24-21.png
+#
+# NOTE: This assumes you have a directory ~/screenshots and you have installed:
+#   - maim
+#   - xclip
+# ----------------------------------------------------------------------------------------------------------------
+
+# screenshot (saves to clipboard and a file in ~/screenshots)
+# key: PrtSc
+bindsym Print exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/screenshots/screenshot_$NOW.png && xclip -selection clip -t image/png ~/screenshots/screenshot_$NOW.png
