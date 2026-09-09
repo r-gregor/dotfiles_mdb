@@ -74,8 +74,8 @@ endif
 set listchars=tab:┊⋅
 set list
 set listchars+=trail:⋅
-nnoremap <space>. :set listchars+=space:⋅ <CR>
-nnoremap <space>, :set listchars-=space:⋅ <CR>
+nnoremap <SPACE>. :set listchars+=space:⋅ <CR>
+nnoremap <SPACE>, :set listchars-=space:⋅ <CR>
 
 
 " ----------- 20190711 PYTHON HIGHLITING ----------------------------
@@ -92,20 +92,20 @@ let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 " ###########################################################################
 "
 " ----------------- SYNTAX SETUP MAPPINGS ----------------------
-noremap ,stb :so ~/.vimrc <bar> :set syntax=bash<CR>
-noremap ,stz :so ~/.vimrc <bar> :set syntax=zig<CR>
-noremap ,stp :so ~/.vimrc <bar> :set syntax=python<CR>
-noremap ,stc :so ~/.vimrc <bar> :set syntax=c<CR>
-noremap ,stj :so ~/.vimrc <bar> :set syntax=java<CR>
+noremap ,stb :so ~/.vimrc <BAR> :set syntax=bash<CR>
+noremap ,stz :so ~/.vimrc <BAR> :set syntax=zig<CR>
+noremap ,stp :so ~/.vimrc <BAR> :set syntax=python<CR>
+noremap ,stc :so ~/.vimrc <BAR> :set syntax=c<CR>
+noremap ,stj :so ~/.vimrc <BAR> :set syntax=java<CR>
 
 " ----------------- ABBREVIATIONS 01 ---------------------------
-" ab sbng #! /usr/bin/env bash<cr><cr><esc>:so ~/.vimrc <BAR> :set syntax=bash
+" ab sbng #! /usr/bin/env bash<CR><CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
 " updated 20250807: insert datestamp
-ab sbng #! /usr/bin/env bash<cr># fname: <c-r>%<cr># <c-r>=strftime('%Y%m%d')<cr> v1<cr># ---<cr><esc>:so ~/.vimrc <BAR> :set syntax=bash
+ab sbng #! /usr/bin/env bash<CR># fname: <C-R>%<CR># <C-R>=strftime('%Y%m%d')<CR> v1<CR># ---<CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
 
-ab pt3 #! /usr/bin/env python3<cr># -*- coding: utf-8 -*-<cr><cr><esc>:so ~/.vimrc <BAR> :set syntax=python
+ab pt3 #! /usr/bin/env python3<CR># -*- coding: utf-8 -*-<CR><CR><ESC>:so ~/.vimrc <BAR> :set syntax=python
 ab sout System.out.println(
-ab zst const std = @import("std");<cr><cr>pub fn main() !void {<cr>const out = std.io.getStdOut().writer();<cr>const in = std.io.getStdiIn().reader();<cr><cr>try out.print("I'm Alive!\n", .{});<cr><cr>}<cr><esc>:so ~/.vimrc <BAR> :set syntax=zig
+ab zst const std = @import("std");<CR><CR>pub fn main() !void {<CR>const out = std.io.getStdOut().writer();<CR>const in = std.io.getStdiIn().reader();<CR><CR>try out.print("I'm Alive!\n", .{});<CR><CR>}<CR><ESC>:so ~/.vimrc <BAR> :set syntax=zig
 "
 " ----------------- ENCLOSING BRACKETS/SQUARE/CURLY ------------
 inoremap ${{ ${}<ESC>hli
@@ -116,7 +116,7 @@ inoremap [[[ [[]]<ESC>hli
 "
 " ------------- C ABBREVIATIONS ------------------------------
 " update 20250321
-ab cstv #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(void)<right> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc <BAR> :set syntax=c
+ab cstv #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(void)<RIGHT> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc <BAR> :set syntax=c
 ab cst #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(int argc, char **argv)<right> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc <BAR> :set syntax=c
 ""
 " break line at position 110 chars
@@ -125,13 +125,13 @@ nnoremap ,b 0110lbi<BS><CR><ESC>
 "
 " abbreviations for java 20220830
 " ------------- JAVA ABBREVIATIONS ------------------------------
-iab psvm <TAB>public static void main(String[<Right><Space>args<Right><Space>{<CR><CR><CR><Right><Space>// end main<ESC>kki<CR>
+iab psvm <TAB>public static void main(String[<Right><SPACE>args<Right><SPACE>{<CR><CR><CR><Right><SPACE>// end main<ESC>kki<CR>
 inoremap sout System.out.println("");<ESC>hhi
 iab inm if __name__ == '__main__':<CR>
 "
 
 " mapping to insert file search
-inoremap <C-f> <C-x><C-f>
+inoremap <C-F> <C-X><C-F>
 "
 
 " ###########################################################################
@@ -139,9 +139,9 @@ inoremap <C-f> <C-x><C-f>
 " ----------------- QUOTING: automatic ------------------------------
 " 20201224: add/remove quotes arround the word:
 " Quote a word consisting of letters from iskeyword.
-nnoremap <silent> ,dq :call Quote('"')<CR>
-nnoremap <silent> ,sq :call Quote("'")<CR>
-nnoremap <silent> ,uq :call UnQuote()<CR>
+nnoremap <SILENT> ,dq :call Quote('"')<CR>
+nnoremap <SILENT> ,sq :call Quote("'")<CR>
+nnoremap <SILENT> ,uq :call UnQuote()<CR>
 function! Quote(quote)
 	normal mz
 	exe 's/\(\k*\%#\k*\)/' . a:quote . '\1' . a:quote . '/'
@@ -213,7 +213,7 @@ nnoremap ,n :call NumberToggle()<CR>
 " :source ~/.vim/setcolors.vim
 " :SetColors all
 " :colors <colorscheme name>
-" ... switch to next F8; switch to previous <shift>+F8
+" ... switch to next F8; switch to previous <SHIFT>+F8
 
 
 "
@@ -230,7 +230,7 @@ nnoremap ,d :%s/\[\d\+]//gc
 " wildmenu and wildmode are used for command line completion.
 " the command line is "expanded" vertically with a list of all the
 " options available on your machine displayed in columns and an
-" horizontal strip that you can navigate with <Tab> (forward) and
+" horizontal strip that you can navigate with <TAB> (forward) and
 " <S-Tab> (backward).
 set wildmenu
 set wildmode=list:longest,full
@@ -251,7 +251,7 @@ vnoremap ,ht :s/\%V\(.*\)\%V/<!-- \1 -->/<CR>
 vnoremap ,hu :s/\%V<!-- \(.*\) -->\%V/\1/<CR>
 "
 " ---
-vnoremap ,<space> :s@^.\{1,2\} @@<CR>
+vnoremap ,<SPACE> :s@^.\{1,2\} @@<CR>
 vnoremap ,t :s/\(\t\+\) */\1/g<CR>
 "
 " added 20211101: C-style comment out visual block 
@@ -271,8 +271,8 @@ vnoremap ,rr >gv:s/\(\t\+\) \+/\1/g<CR>
 " clone current line or selection and:
 "        - normal mode: paste it under current line
 "        - visual selection: paste it over current line, but select lower selection block
-noremap <leader>c yyp
-vnoremap <leader>c yPgv
+noremap <LEADER>c yyp
+vnoremap <LEADER>c yPgv
 
 " ----------------- PLUGGINS ---------------------------------
 " Plugins (vim-plug)
@@ -314,16 +314,16 @@ nnoremap <F5> :NERDTreeToggle<CR>
 let g:rainbow_active = 0
 
 " 20210813: vim's file explorer (Netrw) in left column of size 30 (close with :bd)
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+nnoremap <LEADER>pv :wincmd v<BAR> :Ex <BAR> :vertical resize 30<CR>
 
 " ranger settings 20210813
 let g:ranger_map_keys = 0
-nnoremap <leader>r :Ranger<CR>
+nnoremap <LEADER>r :Ranger<CR>
 
 " mapping to replace spaces and semicolon or just spaces
 " at the end of the line:
 " effect: single ; at the end of text remains
-nnoremap <leader>s :s/ *;*$/;/<esc>j
+nnoremap <LEADER>s :s/ *;*$/;/<ESC>j
 
 " ----------------- CROSSHAIR LOCATION ------------------------
 set cursorline
@@ -348,33 +348,33 @@ hi CursorLine cterm=NONE guifg=NONE
 " to enter Alt+j key: Ctrl+v Alt+j in insert mode!
 " nnoremap j :m.+1<CR>==
 " nnoremap k :m.-2<CR>==
-" inoremap j <Esc>:m.+1<CR>==gi
-" inoremap j <Esc>:m.-2<CR>==gi
+" inoremap j <ESC>:m.+1<CR>==gi
+" inoremap j <ESC>:m.-2<CR>==gi
 " vnoremap j :m'>+1<CR>gv=gv
 " vnoremap k :m'<-2<CR>gv=gv
 
 " move entire lines UP an d DOWN
 " to enter instead of Alt key --> SPACE key
-nnoremap <Space>j :m.+1<CR>==
-nnoremap <Space>k :m.-2<CR>==
-vnoremap <Space>j :m'>+1<CR>gv=gv
-vnoremap <Space>k :m'<-2<CR>gv=gv
+nnoremap <SPACE>j :m.+1<CR>==
+nnoremap <SPACE>k :m.-2<CR>==
+vnoremap <SPACE>j :m'>+1<CR>gv=gv
+vnoremap <SPACE>k :m'<-2<CR>gv=gv
 
 " 20220408: replace start of the line with '$> ' prompt
 nnoremap ,4 :s/^/$> /<CR><CR>
 vnoremap ,4 :s/^/$> /<CR><CR>
-nnoremap <Space>4 :s/^\$ /$> /<CR><CR>
-vnoremap <Space>4 :s/^\$ /$> /<CR><CR>
+nnoremap <SPACE>4 :s/^\$ /$> /<CR><CR>
+vnoremap <SPACE>4 :s/^\$ /$> /<CR><CR>
 
-nnoremap <leader>n :NERDTree<CR>
-nnoremap <leader>ff :FZF<CR>
-nnoremap <leader>fe :FZF -e<CR>
+nnoremap <LEADER>n :NERDTree<CR>
+nnoremap <LEADER>ff :FZF<CR>
+nnoremap <LEADER>fe :FZF -e<CR>
 
 " added 20220926
 " replaces tabs to 4 spaces in visual block
 " whole lines -> <shift+v>
 " block       -> <ctrl+v>
-vnoremap <C-t> :s/\%V\t/    /g<CR>
+vnoremap >C-T> :s/\%V\t/    /g<CR>
 
 " added 20221121
 " vim-move plugin
@@ -383,7 +383,7 @@ let g:move_key_modifier_visualmode = 'S'
 
 " added 20231006
 " removes lagging when editing .h files
-nnoremap <leader>st :syntax off<CR>:syntax on<CR>
+nnoremap <LEADER>st :syntax off<CR>:syntax on<CR>
 
 " put semicolon at the end of the line
 
@@ -426,7 +426,7 @@ hi Normal ctermbg=NONE guibg=NONE
 " 1 - go inside '[' ']'
 " 2 - <c-o> to go to coresponding link at the bottom
 " 3 - pres ,lc to do the magic ...
-noremap ,lc fhvg_y<C-o>ci[<C-r>0<ESC>
+noremap ,lc fhvg_y<C-O>ci[<C-R>0<ESC>
 
 " 20251114
 " open all buffers into separate tabs
@@ -438,56 +438,56 @@ noremap ,tr 0yyjp}P<ESC>j
 
 " 20251205
 " move '{' after 'func() '
-noremap <space>f jddkA {<ESC>j
+noremap <SPACE>f jddkA {<ESC>j
 
 " 20251210
-noremap <space>ss  :set syntax=<CR>
-noremap <space>ssh  :set syntax=sh<CR>
-noremap <space>ssc :set syntax=c<CR>
-noremap <space>ssj :set syntax=java<CR>
-noremap <space>ssp :set syntax=python<CR>
-noremap <space>sst :set syntax=text<CR>
-noremap <space>ssg :set syntax=go<CR>
+noremap <SPACE>ss  :set syntax=<CR>
+noremap <SPACE>ssh  :set syntax=sh<CR>
+noremap <SPACE>ssc :set syntax=c<CR>
+noremap <SPACE>ssj :set syntax=java<CR>
+noremap <SPACE>ssp :set syntax=python<CR>
+noremap <SPACE>sst :set syntax=text<CR>
+noremap <SPACE>ssg :set syntax=go<CR>
 
 " 20251223
 " select whole 'main() { ... }' block, formate it with '=' and
 " replace 5 spaces with tabs
-nnoremap <space>= 0Vf{%=gv:s/\(\t\+\) \+/\1/g<CR>
+nnoremap <SPACE>= 0Vf{%=gv:s/\(\t\+\) \+/\1/g<CR>
 
 " 20260114 --> 20260119
-" nnoremap <space>v :so ~/.vimrc <BAR> set syntax=c<CR>
-nnoremap <space>v :so ~/.vimrc <BAR> set syntax=c <BAR> :noh<CR>
+" nnoremap <SPACE>v :so ~/.vimrc <BAR> set syntax=c<CR>
+nnoremap <SPACE>v :so ~/.vimrc <BAR> set syntax=c <BAR> :noh<CR>
 
 " 20260210
 " move line under the cursor inside []
 " move selected text into []
-nnoremap ,sb 0vg_xi[<c-r>"]<esc>j<cr>
+nnoremap ,sb 0vg_xi[<C-R>"]<ESC>j<CR>
 vnoremap ,sb xi[]<ESC>h""p<ESC>
 
 " 20260210 change buffer to file from list
 " from:
 " vim-working-with-buffers-multif-5ppp-20260210.txt
 " https://builtin.com/articles/working-with-buffers-in-vim
-nnoremap <Leader>b :buffers<CR>:buffer<Space>
+nnoremap <LEADER>b :buffers<CR>:buffer<SPACE>
 
 " 20260211
 " search in vim's file edit histroy and open it for edit/view
 " must enter colon ':' and add a line number
-nnoremap <leader>oo :oldfiles<CR>e #<
+nnoremap <LEADER>oo :oldfiles<CR>e #<
 
 " --- REPLACE LEADING 4 SPACES TO TABS ---
 " 20260219 replace leading 4 spaces to tabs
-nnoremap <space>4t :%s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
-vnoremap <space>4t :s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+nnoremap <SPACE>4t :%s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+vnoremap <SPACE>4t :s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
 
 " --- REPLACE LEADING 2 SPACES TO TABS ---
 " 20260612 replace leading 2 spaces to tabs
-nnoremap <space>2t :%s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
-vnoremap <space>2t :s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
+nnoremap <SPACE>2t :%s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
+vnoremap <SPACE>2t :s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
 
 " 20260311:
 " replace single quote inside words with apostrophe command:
-nnoremap <space>9 :%s/\([[:alpha:]]\)'\([[:alpha:]]\)/\1´\2/g<CR><BAR>:noh<CR>
+nnoremap <SPACE>9 :%s/\([[:alpha:]]\)'\([[:alpha:]]\)/\1´\2/g<CR><BAR>:noh<CR>
 
 " 20260317
 " retab visual sellection
@@ -495,8 +495,8 @@ vnoremap ,rt :retab!<CR>
 
 " 20260317
 " move selected text between '', or between ""
-vnoremap <space>sq xi''<ESC>h""p<ESC>
-vnoremap <space>dq xi""<ESC>h""p<ESC>
+vnoremap <SPACE>sq xi''<ESC>h""p<ESC>
+vnoremap <SPACE>dq xi""<ESC>h""p<ESC>
 
 " 20260519
 " remove '[...]' in current line
@@ -505,15 +505,15 @@ vnoremap ,ds :s/\[.\+\]//g<CR>:noh<CR>
 
 " 20260807
 " insert datestamp 'YYYYmmdd'
-nnoremap ,dt "=strftime('%Y%m%d')<cr>P<cr>
-inoremap ,dt <c-r>=strftime('%Y%m%d')<cr>
-vnoremap ,dt <c-r>=strftime('%Y%m%d')<cr>
+nnoremap ,dt "=strftime('%Y%m%d')<CR>P<CR>
+inoremap ,dt <C-R>=strftime('%Y%m%d')<CR>
+vnoremap ,dt <C-R>=strftime('%Y%m%d')<CR>
 
 " 20260812
 " write and close buffer
-noremap ,wd :w <bar> :bd<cr>
+noremap ,wd :w <BAR> :bd<CR>
 " or:
-" noremap ,wd :w \| :bd<cr>
+" noremap ,wd :w \| :bd<CR>
 
 " 20260820
 " change from 'nonmodifiable' to 'modifiable'
@@ -524,6 +524,6 @@ noremap ,nf :set nomodifiable<CR>
 
 " 20260831
 " put sellection inside double or single quotes
-vnoremap 1q c''<esc>hp
-vnoremap 2q c""<esc>hp
+vnoremap 1q c''<ESC>hp
+vnoremap 2q c""<ESC>hp
 
