@@ -97,6 +97,7 @@ noremap ,stz :so ~/.vimrc <BAR> :set syntax=zig<CR>
 noremap ,stp :so ~/.vimrc <BAR> :set syntax=python<CR>
 noremap ,stc :so ~/.vimrc <BAR> :set syntax=c<CR>
 noremap ,stj :so ~/.vimrc <BAR> :set syntax=java<CR>
+noremap ,stv :so ~/.vimrc <BAR> :set syntax=vim<CR>
 
 " ----------------- ABBREVIATIONS 01 ---------------------------
 " ab sbng #! /usr/bin/env bash<CR><CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
@@ -448,6 +449,7 @@ noremap <SPACE>ssj :set syntax=java<CR>
 noremap <SPACE>ssp :set syntax=python<CR>
 noremap <SPACE>sst :set syntax=text<CR>
 noremap <SPACE>ssg :set syntax=go<CR>
+noremap <SPACE>ssv :set syntax=vim<CR>
 
 " 20251223
 " select whole 'main() { ... }' block, formate it with '=' and
