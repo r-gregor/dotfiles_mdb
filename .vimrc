@@ -1,6 +1,6 @@
-"DOMA: LAST CHANGE 20240227
+"DOMA: LAST CHANGE 20260911
 "
-" ------------------------- DEFAULT SETTINGS -----------------------------------
+" ========================= DEFAULT SETTINGS ================================================================
 set nocompatible                    " This must be first, because it changes other options as a side effect.
 set backspace=indent,eol,start      " allow backspacing over everything in insert mode
 set history=50                      " keep 50 lines of command line history
@@ -90,9 +90,39 @@ nnoremap <SPACE>t :set listchars=tab:┊⋅<CR>
 let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 
 
-" ###########################################################################
+" ---
+" ADDED 20210308
+" wildmenu and wildmode are used for command line completion.
+" the command line is "expanded" vertically with a list of all the
+" options available on your machine displayed in columns and an
+" horizontal strip that you can navigate with <TAB> (forward) and
+" <S-Tab> (backward).
+set wildmenu
+set wildmode=list:longest,full
+
+" ================= ABBREVIATIONS ==========================================================================
+
+" ab sbng #! /usr/bin/env bash<CR><CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
+" updated 20250807: insert datestamp
+ab sbng #! /usr/bin/env bash<CR># fname: <C-R>%<CR># <C-R>=strftime('%Y%m%d')<CR> v1<CR># ---<CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
+
+ab pt3 #! /usr/bin/env python3<CR># -*- coding: utf-8 -*-<CR><CR><ESC>:so ~/.vimrc <BAR> :set syntax=python
+ab sout System.out.println(
+ab zst const std = @import("std");<CR><CR>pub fn main() !void {<CR>const out = std.io.getStdOut().writer();<CR>const in = std.io.getStdiIn().reader();<CR><CR>try out.print("I'm Alive!\n", .{});<CR><CR>}<CR><ESC>:so ~/.vimrc <BAR> :set syntax=zig"
+
+" ------------- C ABBREVIATIONS ------------------------------
+" update 20250321
+ab cstv #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(void)<RIGHT> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc <BAR> :set syntax=c
+ab cst #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(int argc, char **argv)<right> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc <BAR> :set syntax=c
 "
-" ----------------- SYNTAX SETUP MAPPINGS ----------------------
+" ------------- JAVA ABBREVIATIONS ------------------------------
+iab psvm <TAB>public static void main(String[<Right><SPACE>args<Right><SPACE>{<CR><CR><CR><Right><SPACE>// end main<ESC>kki<CR>
+inoremap sout System.out.println("");<ESC>hhi
+iab inm if __name__ == '__main__':<CR>
+
+" ================ MAPPINGS =================================================================================
+
+"--- SYNTAX SETUP MAPPINGS ---
 noremap ,stb :so ~/.vimrc <BAR> :set syntax=bash<CR>
 noremap ,stz :so ~/.vimrc <BAR> :set syntax=zig<CR>
 noremap ,stp :so ~/.vimrc <BAR> :set syntax=python<CR>
@@ -100,50 +130,26 @@ noremap ,stc :so ~/.vimrc <BAR> :set syntax=c<CR>
 noremap ,stj :so ~/.vimrc <BAR> :set syntax=java<CR>
 noremap ,stv :so ~/.vimrc <BAR> :set syntax=vim<CR>
 
-" ----------------- ABBREVIATIONS 01 ---------------------------
-" ab sbng #! /usr/bin/env bash<CR><CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
-" updated 20250807: insert datestamp
-ab sbng #! /usr/bin/env bash<CR># fname: <C-R>%<CR># <C-R>=strftime('%Y%m%d')<CR> v1<CR># ---<CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
-
-ab pt3 #! /usr/bin/env python3<CR># -*- coding: utf-8 -*-<CR><CR><ESC>:so ~/.vimrc <BAR> :set syntax=python
-ab sout System.out.println(
-ab zst const std = @import("std");<CR><CR>pub fn main() !void {<CR>const out = std.io.getStdOut().writer();<CR>const in = std.io.getStdiIn().reader();<CR><CR>try out.print("I'm Alive!\n", .{});<CR><CR>}<CR><ESC>:so ~/.vimrc <BAR> :set syntax=zig
-"
-" ----------------- ENCLOSING BRACKETS/SQUARE/CURLY ------------
+" --- ENCLOSING BRACKETS/SQUARE/CURLY ---
 inoremap ${{ ${}<ESC>hli
 inoremap {{ {}<ESC>hli
 inoremap (( ()<ESC>hli
 inoremap [[ []<ESC>hli
 inoremap [[[ [[]]<ESC>hli
-"
-" ------------- C ABBREVIATIONS ------------------------------
-" update 20250321
-ab cstv #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(void)<RIGHT> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc <BAR> :set syntax=c
-ab cst #include <stdio.h><CR>#include <string.h><CR><CR><CR>int main(int argc, char **argv)<right> {<CR><CR><CR><CR><CR>return 0;<CR>}<ESC>4ki<TAB>printf("I'm Alive");<ESC>:so ~/.vimrc <BAR> :set syntax=c
-""
-" break line at position 110 chars
-" 0110lbikba
+
+" --- BREAK LINE AT POSITION 110 CHARS ---
 nnoremap ,b 0110lbi<BS><CR><ESC>
-"
-" abbreviations for java 20220830
-" ------------- JAVA ABBREVIATIONS ------------------------------
-iab psvm <TAB>public static void main(String[<Right><SPACE>args<Right><SPACE>{<CR><CR><CR><Right><SPACE>// end main<ESC>kki<CR>
-inoremap sout System.out.println("");<ESC>hhi
-iab inm if __name__ == '__main__':<CR>
-"
+" 0110lbikba
 
-" mapping to insert file search
+" --- MAPPING TO INSERT FILE SEARCH ---
 inoremap <C-F> <C-X><C-F>
-"
 
-" ###########################################################################
 
-" ----------------- QUOTING: automatic ------------------------------
-" 20201224: add/remove quotes arround the word:
-" Quote a word consisting of letters from iskeyword.
+" --- ADD/REMOVE QUOTES ARROUND THE WORD ---
 nnoremap <SILENT> ,dq :call Quote('"')<CR>
 nnoremap <SILENT> ,sq :call Quote("'")<CR>
 nnoremap <SILENT> ,uq :call UnQuote()<CR>
+
 function! Quote(quote)
 	normal mz
 	exe 's/\(\k*\%#\k*\)/' . a:quote . '\1' . a:quote . '/'
@@ -173,9 +179,195 @@ function! NumberToggle()
 	endif
 endfunction
 
+" --- TOGGLE NUMBER/RELATIVENUMBER ---
 nnoremap ,n :call NumberToggle()<CR>
 
 
+" --- CUSTOM MAPPINGS ---
+let mapleader = " "
+
+"  --- SEARCH FOR [12] OR [123] TROUGHOUT A FILE AND ASK TO DELETE ---
+nnoremap ,d :%s/\[\d\+]//gc
+
+" --- COMMENT/UNCOMMENT VISUALLY SELECTED BLOCK ---
+vnoremap ,pt :s@\(^\s*\)\(.*\)@\1# \2@<CR>
+vnoremap ,pu :s@\(^\s*\)# @\1@<CR>
+vnoremap ,jv :s@\(^\s*\)\(.*\)@\1// \2@<CR>
+vnoremap ,ju :s@\(^\s*\)// @\1@<CR>
+
+" --- HTML COMMENT/UNCOMMENT ---
+vnoremap ,ht :s/\%V\(.*\)\%V/<!-- \1 -->/<CR>
+vnoremap ,hu :s/\%V<!-- \(.*\) -->\%V/\1/<CR>
+
+" --- ??? ---
+vnoremap ,<SPACE> :s@^.\{1,2\} @@<CR>
+vnoremap ,t :s/\(\t\+\) */\1/g<CR>
+
+" --- C-STYLE COMMENT OUT VISUAL BLOCK ---
+vnoremap ,cc :s/^/ * /<CR>gv"xdO/*<CR><ESC>0C */<ESC>k"xp<CR>
+vnoremap ,cu :s/^ \* //<CR>gv"0dddkdd"0P<CR>
+
+" --- ENCLOSE VISUAL SELECTION BETWEEN <CODE></CODE> TAGS ---
+vnoremap ,cd di<code><CR></code><CR><ESC>kP?<code><CR>:s@.*\(<code>\)@\1@<CR>/</code><CR>:s@.*\(</code>\)@\1@<CR>j
+
+" --- SHIFT TAB AND REMOVE SPACES ---
+vnoremap ,rr >gv:s/\(\t\+\) \+/\1/g<CR>
+
+" --- CLONE CURRENT LINE OR SELECTION ---
+noremap <LEADER>c yyp
+vnoremap <LEADER>c yPgv
+" clone current line or selection and:
+"        - normal mode: paste it under current line
+"        - visual selection: paste it over current line, but select lower selection block
+
+" --- VIM'S FILE EXPLORER (nETRW) IN LEFT COLUMN OF SIZE 30 (CLOSE WITH :BD) ---
+nnoremap <LEADER>pv :wincmd v<BAR> :Ex <BAR> :vertical resize 30<CR>
+
+" --- RANGER SETTINGS ---
+let g:ranger_map_keys = 0
+nnoremap <LEADER>r :Ranger<CR>
+
+" --- REPLACE SPACES AND SEMICOLON OR JUST SPACES ---
+nnoremap <LEADER>s :s/ *;*$/;/<ESC>j
+" mapping to replace spaces and semicolon or just spaces
+" at the end of the line:
+" effect: single ; at the end of text remains
+
+" move entire lines around (from: https://vim.fandom.com/wiki/Moving_lines_up_or_down)
+" to enter Alt+j key: Ctrl+v Alt+j in insert mode!
+" nnoremap j :m.+1<CR>==
+" nnoremap k :m.-2<CR>==
+" inoremap j <ESC>:m.+1<CR>==gi
+" inoremap j <ESC>:m.-2<CR>==gi
+" vnoremap j :m'>+1<CR>gv=gv
+" vnoremap k :m'<-2<CR>gv=gv
+
+" --- MOVE ENTIRE LINES up AND down ---
+nnoremap <SPACE>j :m.+1<CR>==
+nnoremap <SPACE>k :m.-2<CR>==
+vnoremap <SPACE>j :m'>+1<CR>gv=gv
+vnoremap <SPACE>k :m'<-2<CR>gv=gv
+" to enter instead of Alt key --> SPACE key
+
+" --- REPLACE START OF THE LINE WITH '$> ' PROMPT ---
+nnoremap ,4 :s/^/$> /<CR><CR>
+vnoremap ,4 :s/^/$> /<CR><CR>
+nnoremap <SPACE>4 :s/^\$ /$> /<CR><CR>
+vnoremap <SPACE>4 :s/^\$ /$> /<CR><CR>
+
+" --- FILE MANAGERS ---
+nnoremap <LEADER>n :NERDTree<CR>
+nnoremap <LEADER>ff :FZF<CR>
+nnoremap <LEADER>fe :FZF -e<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
+
+" --- REPLACES TABS TO 4 SPACES IN VISUAL BLOCK ---
+vnoremap <C-T> :s/\%V\t/    /g<CR>
+" whole lines -> <shift+v>
+" block       -> <ctrl+v>
+
+" added 20221121
+" vim-move plugin
+let g:move_key_modifier = 'C'
+let g:move_key_modifier_visualmode = 'S'
+
+" --- REMOVES LAGGING WHEN EDITING .H FILES ---
+nnoremap <LEADER>st :syntax off<CR>:syntax on<CR>
+
+" --- PUT SEMICOLON AT THE END OF THE LINE ---
+nnoremap ;; A;<ESC><CR>
+vnoremap ;; :norm A;<ESC><CR>
+
+
+" --- COPY HTTP LINK INTO THE [NUMBER] HOLDER FOR THE LINK AFTER LYXD-ED DOCUMENT ---
+noremap ,lc fhvg_y<C-O>ci[<C-R>0<ESC>
+" 1 - go inside '[' ']'
+" 2 - <c-o> to go to coresponding link at the bottom
+" 3 - pres ,lc to do the magic ...
+
+" --- OPEN ALL BUFFERS INTO SEPARATE TABS ---
+map ,bt :bufdo tab split<CR><CR>
+
+" --- TABLE ROW DIVIDERS ---
+noremap ,tr 0yyjp}P<ESC>j
+
+" --- MOVE '{' AFTER 'FUNC() ' ---
+noremap <SPACE>f jddkA {<ESC>j
+
+" --- SET SYNTAX ---
+noremap <SPACE>ssj :set syntax=java<CR>
+noremap <SPACE>ssp :set syntax=python<CR>
+noremap <SPACE>sst :set syntax=text<CR>
+noremap <SPACE>ssg :set syntax=go<CR>
+noremap <SPACE>ssv :set syntax=vim<CR>
+
+" --- SELECT WHOLE 'MAIN() { ... }' BLOCK, FORMATE IT WITH '=' ---
+nnoremap <SPACE>= 0Vf{%=gv:s/\(\t\+\) \+/\1/g<CR>
+" select whole 'main() { ... }' block, formate it with '=' and
+" replace 5 spaces with tabs
+
+" :so ~/.vimrc | set syntax=c
+nnoremap <SPACE>v :so ~/.vimrc <BAR> set syntax=c <BAR> :noh<CR>
+
+" --- MOVE LINE UNDER THE CURSOR OR SELECTED TEXT INSIDE [] ---
+nnoremap ,sb 0vg_xi[<C-R>"]<ESC>j<CR>
+vnoremap ,sb xi[]<ESC>h""p<ESC>
+
+" --- CHANGE BUFFER TO FILE FROM LIST ---
+nnoremap <LEADER>b :buffers<CR>:buffer<SPACE>
+" from:
+" vim-working-with-buffers-multif-5ppp-20260210.txt
+" https://builtin.com/articles/working-with-buffers-in-vim
+
+" --- SEARCH IN VIM'S FILE EDIT HISTROY AND OPEN IT FOR EDIT/VIEW ---
+nnoremap <LEADER>oo :oldfiles<CR>e #<
+" search in vim's file edit histroy and open it for edit/view
+" must enter colon ':' and add a line number
+
+" --- REPLACE LEADING 4 SPACES TO TABS ---
+nnoremap <SPACE>4t :%s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+vnoremap <SPACE>4t :s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
+
+" --- REPLACE LEADING 2 SPACES TO TABS ---
+nnoremap <SPACE>2t :%s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
+vnoremap <SPACE>2t :s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
+
+" --- REPLACE SINGLE QUOTE INSIDE WORDS WITH APOSTROPHE COMMAND ---
+nnoremap <SPACE>9 :%s/\([[:alpha:]]\)'\([[:alpha:]]\)/\1´\2/g<CR><BAR>:noh<CR>
+
+" --- RETAB VISUAL SELLECTION ---
+vnoremap ,rt :retab!<CR>
+
+" --- MOVE SELECTED TEXT BETWEEN '', OR BETWEEN "" ---
+vnoremap <SPACE>sq xi''<ESC>h""p<ESC>
+vnoremap <SPACE>dq xi""<ESC>h""p<ESC>
+
+" --- REMOVE '[...]' IN CURRENT LINE ---
+nnoremap ,ds :s/\[.\+\]//g<CR>:noh<CR>
+vnoremap ,ds :s/\[.\+\]//g<CR>:noh<CR>
+
+" --- INSERT DATESTAMP 'YYYYmmdd' ---
+nnoremap ,dt "=strftime('%Y%m%d')<CR>P<CR>
+inoremap ,dt <C-R>=strftime('%Y%m%d')<CR>
+vnoremap ,dt <C-R>=strftime('%Y%m%d')<CR>
+
+" --- WRITE AND CLOSE BUFFER ---
+noremap ,wd :w <BAR> :bd<CR>
+" or:
+" noremap ,wd :w \| :bd<CR>
+
+" --- CHANGE FROM 'NONMODIFIABLE' TO 'MODIFIABLE' ---
+noremap ,mf :set modifiable<CR>
+
+" --- CHANGE FROM 'MODIFIABLE' TO 'NONMODIFIABLE' ---
+noremap ,nf :set nomodifiable<CR>
+
+" --- PUT SELLECTION INSIDE DOUBLE OR SINGLE QUOTES ---
+vnoremap 1q c''<ESC>hp
+vnoremap 2q c""<ESC>hp
+
+
+" ================== COLOR THEMES ===========================================================================
 " ----------------- DRACULA COLOR THEME -----------------------------
 " ADDED 20210127
 " from: https://draculatheme.com/vim
@@ -217,66 +409,8 @@ nnoremap ,n :call NumberToggle()<CR>
 " :colors <colorscheme name>
 " ... switch to next F8; switch to previous <SHIFT>+F8
 
-
+" ================= PLUGGINS ===============================================================================
 "
-" ----------------- CUSTOM MAPPINGS ---------------------------------
-let mapleader = " "
-
-" ADDED 20210226
-" search for [12] or [123] troughout a file 
-" and ask to deete it --> maped to ,d <comma+d> 
-nnoremap ,d :%s/\[\d\+]//gc
- 
-" ---
-" ADDED 20210308
-" wildmenu and wildmode are used for command line completion.
-" the command line is "expanded" vertically with a list of all the
-" options available on your machine displayed in columns and an
-" horizontal strip that you can navigate with <TAB> (forward) and
-" <S-Tab> (backward).
-set wildmenu
-set wildmode=list:longest,full
-
-" ---
-"
-" added 20210622 (MY PRECIOUS!!)
-" comment/uncomment visually selected block
-" vnoremap ,pt :s@^@# @<CR>
-" updated (d) 20221116
-vnoremap ,pt :s@\(^\s*\)\(.*\)@\1# \2@<CR>
-vnoremap ,pu :s@\(^\s*\)# @\1@<CR>
-vnoremap ,jv :s@\(^\s*\)\(.*\)@\1// \2@<CR>
-vnoremap ,ju :s@\(^\s*\)// @\1@<CR>
-
-" html comment/uncomment
-vnoremap ,ht :s/\%V\(.*\)\%V/<!-- \1 -->/<CR>
-vnoremap ,hu :s/\%V<!-- \(.*\) -->\%V/\1/<CR>
-"
-" ---
-vnoremap ,<SPACE> :s@^.\{1,2\} @@<CR>
-vnoremap ,t :s/\(\t\+\) */\1/g<CR>
-"
-" added 20211101: C-style comment out visual block 
-" upodated (d) 20221116
-vnoremap ,cc :s/^/ * /<CR>gv"xdO/*<CR><ESC>0C */<ESC>k"xp<CR>
-vnoremap ,cu :s/^ \* //<CR>gv"0dddkdd"0P<CR>
-
-" added 20210629 (d) - enclose visual selection
-" between <code></code> tags
-vnoremap ,cd di<code><CR></code><CR><ESC>kP?<code><CR>:s@.*\(<code>\)@\1@<CR>/</code><CR>:s@.*\(</code>\)@\1@<CR>j
-
-" added 20211105 (en): shift tab and remove spaces
-vnoremap ,rr >gv:s/\(\t\+\) \+/\1/g<CR>
-
-
-" added 20240326 (en)
-" clone current line or selection and:
-"        - normal mode: paste it under current line
-"        - visual selection: paste it over current line, but select lower selection block
-noremap <LEADER>c yyp
-vnoremap <LEADER>c yPgv
-
-" ----------------- PLUGGINS ---------------------------------
 " Plugins (vim-plug)
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
@@ -315,17 +449,6 @@ nnoremap <F5> :NERDTreeToggle<CR>
 " let g:rainbow_active = 1
 let g:rainbow_active = 0
 
-" 20210813: vim's file explorer (Netrw) in left column of size 30 (close with :bd)
-nnoremap <LEADER>pv :wincmd v<BAR> :Ex <BAR> :vertical resize 30<CR>
-
-" ranger settings 20210813
-let g:ranger_map_keys = 0
-nnoremap <LEADER>r :Ranger<CR>
-
-" mapping to replace spaces and semicolon or just spaces
-" at the end of the line:
-" effect: single ; at the end of text remains
-nnoremap <LEADER>s :s/ *;*$/;/<ESC>j
 
 " ----------------- CROSSHAIR LOCATION ------------------------
 set cursorline
@@ -344,53 +467,6 @@ hi CursorLine cterm=NONE guifg=NONE
 
 " from Plugin vim-code-dark
 " colorscheme codedark
-
-
-" move entire lines around (from: https://vim.fandom.com/wiki/Moving_lines_up_or_down)
-" to enter Alt+j key: Ctrl+v Alt+j in insert mode!
-" nnoremap j :m.+1<CR>==
-" nnoremap k :m.-2<CR>==
-" inoremap j <ESC>:m.+1<CR>==gi
-" inoremap j <ESC>:m.-2<CR>==gi
-" vnoremap j :m'>+1<CR>gv=gv
-" vnoremap k :m'<-2<CR>gv=gv
-
-" move entire lines UP an d DOWN
-" to enter instead of Alt key --> SPACE key
-nnoremap <SPACE>j :m.+1<CR>==
-nnoremap <SPACE>k :m.-2<CR>==
-vnoremap <SPACE>j :m'>+1<CR>gv=gv
-vnoremap <SPACE>k :m'<-2<CR>gv=gv
-
-" 20220408: replace start of the line with '$> ' prompt
-nnoremap ,4 :s/^/$> /<CR><CR>
-vnoremap ,4 :s/^/$> /<CR><CR>
-nnoremap <SPACE>4 :s/^\$ /$> /<CR><CR>
-vnoremap <SPACE>4 :s/^\$ /$> /<CR><CR>
-
-nnoremap <LEADER>n :NERDTree<CR>
-nnoremap <LEADER>ff :FZF<CR>
-nnoremap <LEADER>fe :FZF -e<CR>
-
-" added 20220926
-" replaces tabs to 4 spaces in visual block
-" whole lines -> <shift+v>
-" block       -> <ctrl+v>
-vnoremap >C-T> :s/\%V\t/    /g<CR>
-
-" added 20221121
-" vim-move plugin
-let g:move_key_modifier = 'C'
-let g:move_key_modifier_visualmode = 'S'
-
-" added 20231006
-" removes lagging when editing .h files
-nnoremap <LEADER>st :syntax off<CR>:syntax on<CR>
-
-" put semicolon at the end of the line
-
-nnoremap ;; A;<ESC><CR>
-vnoremap ;; :norm A;<ESC><CR>
 
 
 " ----------------- COLOR SETTINGS FINAL (IF NO OTHER WORKS) ---------
@@ -422,111 +498,3 @@ hi Normal ctermbg='131926' guibg='#131926'
 
 " 20240314
 hi Normal ctermbg=NONE guibg=NONE
-
-" 20250515
-" copy http link into the [number] holder for the link after lyxd-ed document
-" 1 - go inside '[' ']'
-" 2 - <c-o> to go to coresponding link at the bottom
-" 3 - pres ,lc to do the magic ...
-noremap ,lc fhvg_y<C-O>ci[<C-R>0<ESC>
-
-" 20251114
-" open all buffers into separate tabs
-map ,bt :bufdo tab split<CR><CR>
-
-" 20251127
-" table row dividers
-noremap ,tr 0yyjp}P<ESC>j
-
-" 20251205
-" move '{' after 'func() '
-noremap <SPACE>f jddkA {<ESC>j
-
-" 20251210
-noremap <SPACE>ss  :set syntax=<CR>
-noremap <SPACE>ssh  :set syntax=sh<CR>
-noremap <SPACE>ssc :set syntax=c<CR>
-noremap <SPACE>ssj :set syntax=java<CR>
-noremap <SPACE>ssp :set syntax=python<CR>
-noremap <SPACE>sst :set syntax=text<CR>
-noremap <SPACE>ssg :set syntax=go<CR>
-noremap <SPACE>ssv :set syntax=vim<CR>
-
-" 20251223
-" select whole 'main() { ... }' block, formate it with '=' and
-" replace 5 spaces with tabs
-nnoremap <SPACE>= 0Vf{%=gv:s/\(\t\+\) \+/\1/g<CR>
-
-" 20260114 --> 20260119
-" nnoremap <SPACE>v :so ~/.vimrc <BAR> set syntax=c<CR>
-nnoremap <SPACE>v :so ~/.vimrc <BAR> set syntax=c <BAR> :noh<CR>
-
-" 20260210
-" move line under the cursor inside []
-" move selected text into []
-nnoremap ,sb 0vg_xi[<C-R>"]<ESC>j<CR>
-vnoremap ,sb xi[]<ESC>h""p<ESC>
-
-" 20260210 change buffer to file from list
-" from:
-" vim-working-with-buffers-multif-5ppp-20260210.txt
-" https://builtin.com/articles/working-with-buffers-in-vim
-nnoremap <LEADER>b :buffers<CR>:buffer<SPACE>
-
-" 20260211
-" search in vim's file edit histroy and open it for edit/view
-" must enter colon ':' and add a line number
-nnoremap <LEADER>oo :oldfiles<CR>e #<
-
-" --- REPLACE LEADING 4 SPACES TO TABS ---
-" 20260219 replace leading 4 spaces to tabs
-nnoremap <SPACE>4t :%s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
-vnoremap <SPACE>4t :s/\(^\s*\)\@<=    /\t/g<CR><BAR>:noh<CR>
-
-" --- REPLACE LEADING 2 SPACES TO TABS ---
-" 20260612 replace leading 2 spaces to tabs
-nnoremap <SPACE>2t :%s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
-vnoremap <SPACE>2t :s/\(^\s*\)\@<=  /\t/g<CR><BAR>:noh<CR>
-
-" 20260311:
-" replace single quote inside words with apostrophe command:
-nnoremap <SPACE>9 :%s/\([[:alpha:]]\)'\([[:alpha:]]\)/\1´\2/g<CR><BAR>:noh<CR>
-
-" 20260317
-" retab visual sellection
-vnoremap ,rt :retab!<CR>
-
-" 20260317
-" move selected text between '', or between ""
-vnoremap <SPACE>sq xi''<ESC>h""p<ESC>
-vnoremap <SPACE>dq xi""<ESC>h""p<ESC>
-
-" 20260519
-" remove '[...]' in current line
-nnoremap ,ds :s/\[.\+\]//g<CR>:noh<CR>
-vnoremap ,ds :s/\[.\+\]//g<CR>:noh<CR>
-
-" 20260807
-" insert datestamp 'YYYYmmdd'
-nnoremap ,dt "=strftime('%Y%m%d')<CR>P<CR>
-inoremap ,dt <C-R>=strftime('%Y%m%d')<CR>
-vnoremap ,dt <C-R>=strftime('%Y%m%d')<CR>
-
-" 20260812
-" write and close buffer
-noremap ,wd :w <BAR> :bd<CR>
-" or:
-" noremap ,wd :w \| :bd<CR>
-
-" 20260820
-" change from 'nonmodifiable' to 'modifiable'
-noremap ,mf :set modifiable<CR>
-
-" change from 'modifiable' to 'nonmodifiable'
-noremap ,nf :set nomodifiable<CR>
-
-" 20260831
-" put sellection inside double or single quotes
-vnoremap 1q c''<ESC>hp
-vnoremap 2q c""<ESC>hp
-
