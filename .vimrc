@@ -76,7 +76,8 @@ set list
 set listchars+=trail:⋅
 nnoremap <SPACE>. :set listchars+=space:⋅ <CR>
 nnoremap <SPACE>, :set listchars-=space:⋅ <CR>
-
+nnoremap <SPACE>0 :set listchars=tab:\ \ ,nbsp:·<CR>
+nnoremap <SPACE>t :set listchars=tab:┊⋅<CR>
 
 " ----------- 20190711 PYTHON HIGHLITING ----------------------------
 " let python_highlight_all = 1      " Enable syntax highlighting for python codes
