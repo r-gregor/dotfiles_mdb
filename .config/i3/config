@@ -127,7 +127,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -274,6 +274,8 @@ bindsym $alt+Ctrl+z exec --no-startup-id /usr/bin/zenity --calendar
 bindsym $alt+Ctrl+w exec --no-startup-id /usr/bin/thunar
 bindsym $mod+$alt+w workspace number $ws3; exec --no-startup-id /usr/bin/thunar
 bindsym $mod+$alt+d workspace number $ws3; exec --no-startup-id /usr/bin/doublecmd
+bindsym $mod+w exec --no-startup-id /usr/bin/rofi -show window
+
 
 # enable enter password window
 # window after sudo apt install lxpolkit
