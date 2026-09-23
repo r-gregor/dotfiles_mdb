@@ -300,6 +300,7 @@ noremap <SPACE>ssp :set syntax=python<CR>
 noremap <SPACE>sst :set syntax=text<CR>
 noremap <SPACE>ssg :set syntax=go<CR>
 noremap <SPACE>ssv :set syntax=vim<CR>
+noremap <SPACE>ssh :set syntax=bash<CR>
 noremap <SPACE>ss :set syntax=<CR>
 
 " --- SELECT WHOLE 'MAIN() { ... }' BLOCK, FORMATE IT WITH '=' ---
