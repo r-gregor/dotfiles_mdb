@@ -67,7 +67,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# SOURCES ...
+# === PERSONAL GLOBALS ===
+export HST="mdb"
+export PG_MJSTF="${HOME}/majstaf"
+export PG_MJBN="${PG_MJSTF}/majbin"
+export PG_GIT="${PG_MJSTF}/${HST}git"
+
+
+# === SOURCES ===
 source $HOME/majstaf/majrcs/bashrc-muadib
 source $HOME/majstaf/majrcs/aliases-muadib
 # source $HOME/majstaf/majrcs/aliases-muadib-fish
@@ -85,8 +92,8 @@ source /home/rgregor/.config/alacritty/extra/completions/alacritty.bash
 #20250425
 eval "$(zoxide init bash)"
 
-export MDBGIT_STATUS_REPORTS="${HOME}/.tmp/MDBGIT_STATUS_REPORTS"
-export MDBGIT_TPUSH_REPORTS="${HOME}/.tmp/MDBGIT_TPUSH_REPORTS"
+export GT_STATUS_REPORTS="${HOME}/.tmp/GT_STATUS_REPORTS"
+export GT_TPUSH_REPORTS="${HOME}/.tmp/GT_TPUSH_REPORTS"
 export TESTING_STATUS_REPORTS="${HOME}/.tmp/TESTING_STATUS_REPORTS"
 export TESTING_TPUSH_REPORTS="${HOME}/.tmp/TESTING_TPUSH_REPORTS"
 
