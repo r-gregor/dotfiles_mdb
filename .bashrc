@@ -69,6 +69,8 @@ fi
 
 # === PERSONAL GLOBALS ===
 export HST="mdb"
+export HSTLONG="muadib"
+
 export PG_MJSTF="${HOME}/majstaf"
 export PG_MJBN="${PG_MJSTF}/majbin"
 export PG_GIT="${PG_MJSTF}/${HST}git"
