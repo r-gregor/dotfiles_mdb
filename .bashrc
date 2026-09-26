@@ -75,7 +75,7 @@ export PG_MJSTF="${HOME}/majstaf"
 export PG_MJBN="${PG_MJSTF}/majbin"
 export PG_GIT="${PG_MJSTF}/${HST}git"
 export FFCMD='/usr/bin/firefox'
-export CLPBRDMNGR='/usr/bin/xclip'
+export CLPBRDMNGR=/usr/bin/xclip
 
 # === SOURCES ===
 source $HOME/majstaf/majrcs/bashrc-muadib
