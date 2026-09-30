@@ -4,7 +4,9 @@ configuration {
     show-icons:      true;
     display-drun:    "";
     disable-history: false;
+    modi: "window,run,ssh,combi";
 }
+
 
 * {
     font: "Jetbrains Mono 12";
