@@ -258,7 +258,7 @@ iab inm if __name__ == '__main__':<CR>
 
 " ================ MAPPINGS =================================================================================
 
-"--- SYNTAX SETUP MAPPINGS ---
+" --- SYNTAX SETUP MAPPINGS ---
 noremap ,stb :so ~/.vimrc <BAR> :set syntax=bash<CR>
 noremap ,stz :so ~/.vimrc <BAR> :set syntax=zig<CR>
 noremap ,stp :so ~/.vimrc <BAR> :set syntax=python<CR>
@@ -514,10 +514,11 @@ nnoremap ,bb :%s/\$\([[:alpha:]]\+\)/${\1}/g<CR>
 nnoremap ,cb a{<ESC>ea}<ESC>
 
 " --- CHANGE 'echo ' into 'printf ' ---
-" pp: echo "..."      --> printf "[i] ... \n"
-" pf: echo "..."      --> printf " ... \n"
-" pe: echo -e "...\n" --> printf " ... \n"
 nnoremap <LEADER>pp ^ciwprintf<ESC>f"a[i] <ESC>f"i\n<ESC>j
 nnoremap <LEADER>pf ^ciwprintf<ESC>$i\n<ESC>j
 nnoremap <LEADER>pe ^vt"cprintf <ESC>j
+" pp: echo "..."      --> printf "[i] ... \n"
+" pf: echo "..."      --> printf " ... \n"
+" pe: echo -e "...\n" --> printf " ... \n"
 
+"
