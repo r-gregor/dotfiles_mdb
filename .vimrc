@@ -100,6 +100,140 @@ let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 set wildmenu
 set wildmode=list:longest,full
 
+" ================== COLOR THEMES ===========================================================================
+
+" ----------------- DRACULA COLOR THEME -----------------------------
+" ADDED 20210127
+" from: https://draculatheme.com/vim
+"
+" Install (Vim):
+" These are the default instructions using Vim 8's |packages| feature. See sections below, if you use other plugin managers.
+"     Create theme folder (in case you don't have yet):
+" mkdir -p ~/.vim/pack/themes/start
+" If you use vim 8.0 (and not 8.2), you may need to use ~/.vim/pack/themes/opt instead.
+"     Navigate to the folder above:
+" cd ~/.vim/pack/themes/start
+"     Clone the repository using the "dracula" name:
+" git clone https://github.com/dracula/vim.git dracula
+"     Create configuration file (in case you don't have yet):
+" touch ~/.vimrc
+"     Edit the ~/.vimrc file with the following content:
+" packadd! dracula
+" syntax enable
+" colorscheme dracula
+" ---
+" literal:
+" """packadd! dracula
+" """syntax enable
+" """colorscheme dracula
+
+
+" ----------------- EDGE COLOR THEME --------------------------------
+" let g:edge_style = 'neon'
+" let g:edge_enable_italic = 1
+" let g:edge_disable_italic_comment = 1
+" colorscheme edge
+
+
+" ----------------- SWITCH COLORSCHEMES - PREVIEV -------------------
+" added: 20210127
+" from https://vim.fandom.com/wiki/Switch_color_schemes
+" :source ~/.vim/setcolors.vim
+" :SetColors all
+" :colors <colorscheme name>
+" ... switch to next F8; switch to previous <SHIFT>+F8
+
+" ================= PLUGGINS ===============================================================================
+"
+" Plugins (vim-plug)
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'
+Plug 'frazrepo/vim-rainbow'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'tomasiser/vim-code-dark'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+" Plug 'dense-analysis/ale'
+Plug 'matze/vim-move'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'ziglang/zig.vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
+" 20240205
+Plug 'fxn/vim-monochrome'
+
+" 20250312
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
+
+call plug#end()
+
+" if executable('bash-language-server')
+"   au User lsp_setup call lsp#register_server({
+"         \ 'name': 'bash-language-server',
+"         \ 'cmd': {server_info->['bash-language-server', 'start']},
+"         \ 'allowlist': ['sh', 'bash'],
+"         \ })
+" endif
+
+nnoremap <F5> :NERDTreeToggle<CR>
+
+" enable Rainbow globally
+" enable Rainbow globally 20210813
+" let g:rainbow_active = 1
+let g:rainbow_active = 0
+
+
+" ----------------- CROSSHAIR LOCATION ------------------------
+set cursorline
+set cursorcolumn
+" hi CursorColumn cterm=NONE ctermbg=red ctermfg=white
+" hi CursorColumn cterm=NONE ctermbg=NONE ctermfg=red
+" hi CursorLine cterm=NONE cterm=underline ctermbg=NONE
+" hi CursorLine term=NONE cterm=underline ctermbg=NONE
+" hi CursorLine guibg=grey16 guifg=NONE
+" hi CursorLine guibg=royalblue4 guifg=NONE
+" hi CursorColumn guibg=royalblue4 guifg=NONE
+" hi CursorLine guibg='#181a1b' cterm=underline guifg=NONE
+" hi CursorLine cterm=underline guifg=NONE
+hi CursorLine cterm=NONE guifg=NONE
+" hi CursorColumn guibg=NONE guifg=NONE
+
+" from Plugin vim-code-dark
+" colorscheme codedark
+
+
+" ----------------- COLOR SETTINGS FINAL (IF NO OTHER WORKS) ---------
+" colorscheme simple-dark
+" colorscheme nord
+" colorscheme Mustang
+" colorscheme wombat256mod
+"
+" 20240205
+" from Plug 'fxn/vim-monochrome'
+" let g:monochrome_italic_comments = 1
+" colorscheme monochrome
+"
+colorscheme catppuccin_mocha
+"
+" 20240116
+" custom color settings for TAB and SPACE chars
+:hi Whitespacechar ctermfg=DarkGray
+:hi Tabspacechar   ctermfg=DarkGray
+:match Whitespacechar / \+$/
+:match Tabspacechar /\t/
+
+" added 20220922 to correct right background for Dracula CS
+" hi Normal ctermbg='282a36'
+hi Normal ctermbg='131926' guibg='#131926'
+" hi Normal ctermbg='222229' guibg='#222229'
+
+" 20240229
+
+" 20240314
+hi Normal ctermbg=NONE guibg=NONE
+
+
 " ================= ABBREVIATIONS ==========================================================================
 
 " ab sbng #! /usr/bin/env bash<CR><CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
@@ -373,138 +507,17 @@ vnoremap 2q c""<ESC>hp
 " --- PUT ${} INSIDE DOUBLE QUOTES ---
 noremap ,qq i"<ESC>f{%a"<ESC>
 
+" --- CONVERT ALL '$varname' to '${varname}' ---
+nnoremap ,bb :%s/\$\([[:alpha:]]\+\)/${\1}/g<CR>
 
-" ================== COLOR THEMES ===========================================================================
+" --- CONVERT SINGLE '$varname' to '${varname}' ---
+nnoremap ,cb a{<ESC>ea}<ESC>
 
-" ----------------- DRACULA COLOR THEME -----------------------------
-" ADDED 20210127
-" from: https://draculatheme.com/vim
-"
-" Install (Vim):
-" These are the default instructions using Vim 8's |packages| feature. See sections below, if you use other plugin managers.
-"     Create theme folder (in case you don't have yet):
-" mkdir -p ~/.vim/pack/themes/start
-" If you use vim 8.0 (and not 8.2), you may need to use ~/.vim/pack/themes/opt instead.
-"     Navigate to the folder above:
-" cd ~/.vim/pack/themes/start
-"     Clone the repository using the "dracula" name:
-" git clone https://github.com/dracula/vim.git dracula
-"     Create configuration file (in case you don't have yet):
-" touch ~/.vimrc
-"     Edit the ~/.vimrc file with the following content:
-" packadd! dracula
-" syntax enable
-" colorscheme dracula
-" ---
-" literal:
-" """packadd! dracula
-" """syntax enable
-" """colorscheme dracula
-
-
-" ----------------- EDGE COLOR THEME --------------------------------
-" let g:edge_style = 'neon'
-" let g:edge_enable_italic = 1
-" let g:edge_disable_italic_comment = 1
-" colorscheme edge
-
-
-" ----------------- SWITCH COLORSCHEMES - PREVIEV -------------------
-" added: 20210127
-" from https://vim.fandom.com/wiki/Switch_color_schemes
-" :source ~/.vim/setcolors.vim
-" :SetColors all
-" :colors <colorscheme name>
-" ... switch to next F8; switch to previous <SHIFT>+F8
-
-" ================= PLUGGINS ===============================================================================
-"
-" Plugins (vim-plug)
-call plug#begin('~/.vim/plugged')
-Plug 'preservim/nerdtree'
-Plug 'frazrepo/vim-rainbow'
-Plug 'francoiscabrol/ranger.vim'
-Plug 'tomasiser/vim-code-dark'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-" Plug 'dense-analysis/ale'
-Plug 'matze/vim-move'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'ziglang/zig.vim'
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-
-" 20240205
-Plug 'fxn/vim-monochrome'
-
-" 20250312
-" Plug 'prabirshrestha/vim-lsp'
-" Plug 'mattn/vim-lsp-settings'
-
-call plug#end()
-
-" if executable('bash-language-server')
-"   au User lsp_setup call lsp#register_server({
-"         \ 'name': 'bash-language-server',
-"         \ 'cmd': {server_info->['bash-language-server', 'start']},
-"         \ 'allowlist': ['sh', 'bash'],
-"         \ })
-" endif
-
-nnoremap <F5> :NERDTreeToggle<CR>
-
-" enable Rainbow globally
-" enable Rainbow globally 20210813
-" let g:rainbow_active = 1
-let g:rainbow_active = 0
-
-
-" ----------------- CROSSHAIR LOCATION ------------------------
-set cursorline
-set cursorcolumn
-" hi CursorColumn cterm=NONE ctermbg=red ctermfg=white
-" hi CursorColumn cterm=NONE ctermbg=NONE ctermfg=red
-" hi CursorLine cterm=NONE cterm=underline ctermbg=NONE
-" hi CursorLine term=NONE cterm=underline ctermbg=NONE
-" hi CursorLine guibg=grey16 guifg=NONE
-" hi CursorLine guibg=royalblue4 guifg=NONE
-" hi CursorColumn guibg=royalblue4 guifg=NONE
-" hi CursorLine guibg='#181a1b' cterm=underline guifg=NONE
-" hi CursorLine cterm=underline guifg=NONE
-hi CursorLine cterm=NONE guifg=NONE
-" hi CursorColumn guibg=NONE guifg=NONE
-
-" from Plugin vim-code-dark
-" colorscheme codedark
-
-
-" ----------------- COLOR SETTINGS FINAL (IF NO OTHER WORKS) ---------
-" colorscheme simple-dark
-" colorscheme nord
-" colorscheme Mustang
-" colorscheme wombat256mod
-"
-" 20240205
-" from Plug 'fxn/vim-monochrome'
-" let g:monochrome_italic_comments = 1
-" colorscheme monochrome
-"
-colorscheme catppuccin_mocha
-"
-" 20240116
-" custom color settings for TAB and SPACE chars
-:hi Whitespacechar ctermfg=DarkGray
-:hi Tabspacechar   ctermfg=DarkGray
-:match Whitespacechar / \+$/
-:match Tabspacechar /\t/
-
-" added 20220922 to correct right background for Dracula CS
-" hi Normal ctermbg='282a36'
-hi Normal ctermbg='131926' guibg='#131926'
-" hi Normal ctermbg='222229' guibg='#222229'
-
-" 20240229
-
-" 20240314
-hi Normal ctermbg=NONE guibg=NONE
-
+" --- CHANGE 'echo ' into 'printf ' ---
+" pp: echo "..."      --> printf "[i] ... \n"
+" pf: echo "..."      --> printf " ... \n"
+" pe: echo -e "...\n" --> printf " ... \n"
+nnoremap <LEADER>pp ^ciwprintf<ESC>f"a[i] <ESC>f"i\n<ESC>j
+nnoremap <LEADER>pf ^ciwprintf<ESC>$i\n<ESC>j
+nnoremap <LEADER>pe ^vt"cprintf <ESC>j
 
