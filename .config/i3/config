@@ -158,7 +158,6 @@ set $ws10 "10"
 # assign different wallpaper to each workspace
 # alias
 set $dofeh exec --no-startup-id feh --randomize --bg-fill /home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2
-
 # switch to workspace and wallpaper
 # bindsym $mod+1 workspace number $ws1; $dofeh
 # bindsym $mod+2 workspace number $ws2; $dofeh
@@ -263,6 +262,8 @@ for_window [class="Transmission-gtk" instance="transmission-gtk"] floating enabl
 # feh 20241003
 exec --no-startup-id feh --randomize --bg-fill /home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2 &
 bindsym $mod+c exec --no-startup-id feh /home/rgregor/majstaf/majvolpejpers/majvolpejpers_bob2/* --recursive --randomize --bg-fill &
+bindsym $mod+p exec --no-startup-id feh /home/rgregor/majstaf/majvolpejpers/majvolpejpers_selection/* --recursive --randomize --bg-fill &
+
 
 # dmenu logout menu
 bindsym $alt+Ctrl+d exec --no-startup-id /home/rgregor/.local/bin/logout-menu-dmn
