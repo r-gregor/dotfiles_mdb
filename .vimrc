@@ -240,7 +240,9 @@ hi Normal ctermbg=NONE guibg=NONE
 " updated 20250807: insert datestamp
 " ab sbng #! /usr/bin/env bash<CR># fname: <C-R>%<CR># <C-R>=strftime('%Y%m%d')<CR> v1<CR># ---<CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
 " ab sbng #! /usr/bin/env bash<CR># fname: <C-R>%<CR># descpt: <CR># <C-R>=strftime('%Y%m%d')<CR> v1<CR># ---<CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
-ab sbng #! /usr/bin/env bash<CR># fname: <C-R>%<CR># descpt: <CR># <C-R>=strftime('%Y%m%d')<CR> v1<CR># last: <CR># ---<CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
+" ab sbng #! /usr/bin/env bash<CR># fname: <C-R>%<CR># descpt: <CR># <C-R>=strftime('%Y%m%d')<CR> v1<CR># last: <CR># ---<CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
+ab sbng #! /usr/bin/env bash<CR># fname: <C-R>%<CR># descpt: <CR># <C-R>=strftime('%Y%m%d')<CR> v1<CR># last: <C-R>=strftime('%Y%m%d')<CR><CR># ---<CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
+ab sbnf #! /usr/bin/env bash<CR># fname: <C-R>%<CR># descpt: <CR># <C-R>=strftime('%Y%m%d')<CR> v1<CR># last: <C-R>=strftime('%Y%m%d')<CR><CR># ---<CR><CR># === GLOBALS ===<CR># === FUNCTIONS ===<CR># === MAIN ===<CR><CR>printf "\n"<CR><ESC>:so ~/.vimrc <BAR> :set syntax=bash
 
 ab pt3 #! /usr/bin/env python3<CR># -*- coding: utf-8 -*-<CR><CR><ESC>:so ~/.vimrc <BAR> :set syntax=python
 ab sout System.out.println(
@@ -521,4 +523,8 @@ nnoremap <LEADER>pe ^vt"cprintf <ESC>j
 " pf: echo "..."      --> printf " ... \n"
 " pe: echo -e "...\n" --> printf " ... \n"
 
+" --- INSERT BASH SCRIPT HEADER (GLOBALS, FUNCTIONS, MAIN) ---
+nnoremap <LEADER>h 0i# === GLOBALS ===<CR># === FUNCTIONS ===<CR># === MAIN ===<CR><CR>printf "\n"<CR><ESC>
+
 "
+
