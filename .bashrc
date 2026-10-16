@@ -82,7 +82,7 @@ source $HOME/majstaf/majrcs/bashrc-muadib
 source $HOME/majstaf/majrcs/aliases-muadib
 # source $HOME/majstaf/majrcs/aliases-muadib-fish
 source $HOME/majstaf/majrcs/barve
-source $HOME/majstaf/majrcs/funclist
+source $HOME/majstaf/majrcs/funclist-mdb
 source $HOME/majstaf/majrcs/peesena
 source $HOME/majstaf/majrcs/vars-muadib
 source $HOME/majstaf/majrcs/xcol_bash.sh
