@@ -1,0 +1,296 @@
+<project version="4">
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/src/module-info.java" />
+      <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+      <option value="$PROJECT_DIR$/src/sample/Main.java" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="efekstest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="efekstest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="efekstest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="efekstest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="efekstest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="efekstest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="efekstest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2190625" />
+      <window_info id="Structure" order="1" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Commit" order="3" />
+      <window_info id="Learn" order="4" />
+      <window_info id="Pull Requests" order="5" />
+      <window_info id="Space Code Reviews" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.20975325" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Problems View" order="5" weight="0.32961223" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Python Packages" order="9" />
+      <window_info anchor="bottom" id="Services" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.32961223" />
+      <window_info anchor="right" id="Space Automation" order="0" />
+      <window_info anchor="right" id="PlantUML" order="1" />
+      <window_info anchor="right" id="Layout Validation" order="2" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.3303125" />
+    </layout>
+    <recentWindows>
+      <value>Project</value>
+      <value>Run</value>
+      <value>Problems View</value>
+      <value>Coverage</value>
+    </recentWindows>
+  </component>
+  <component name="Trusted.Project.Settings" hasCheckedIfOldProject="true" />
+  <component name="WindowStateProjectService">
+    <state x="406" y="215" width="810" height="681" key="#Run/Debug_Configuration_Templates" timestamp="1622234566909">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state x="406" y="215" width="810" height="681" key="#Run/Debug_Configuration_Templates/0.25.1600.875@0.25.1600.875" timestamp="1622234566909" />
+    <state x="378" y="212" width="844" height="536" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622234568644">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state x="378" y="212" width="844" height="536" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1600.875@0.25.1600.875" timestamp="1622234568644" />
+    <state x="791" y="167" width="334" height="492" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1621965861159">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state x="791" y="167" width="334" height="492" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.25.1600.875@0.25.1600.875" timestamp="1621965861159" />
+    <state x="748" y="292" width="421" height="245" key="DetectedRootsChooserDialog" timestamp="1621965857037">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state x="748" y="292" width="421" height="245" key="DetectedRootsChooserDialog/0.25.1600.875@0.25.1600.875" timestamp="1621965857037" />
+    <state x="648" y="157" width="620" height="516" key="FileChooserDialogImpl" timestamp="1621965848205">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state x="648" y="157" width="620" height="516" key="FileChooserDialogImpl/0.25.1600.875@0.25.1600.875" timestamp="1621965848205" />
+    <state width="1554" height="150" key="GridCell.Tab.0.bottom" timestamp="1622237363825">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state width="1554" height="150" key="GridCell.Tab.0.bottom/0.25.1600.875@0.25.1600.875" timestamp="1622237363825" />
+    <state width="1554" height="150" key="GridCell.Tab.0.center" timestamp="1622237363824">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state width="1554" height="150" key="GridCell.Tab.0.center/0.25.1600.875@0.25.1600.875" timestamp="1622237363824" />
+    <state width="1554" height="150" key="GridCell.Tab.0.left" timestamp="1622237363823">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state width="1554" height="150" key="GridCell.Tab.0.left/0.25.1600.875@0.25.1600.875" timestamp="1622237363823" />
+    <state width="1554" height="150" key="GridCell.Tab.0.right" timestamp="1622237363824">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state width="1554" height="150" key="GridCell.Tab.0.right/0.25.1600.875@0.25.1600.875" timestamp="1622237363824" />
+    <state x="402" y="146" width="1095" height="734" key="SettingsEditor" timestamp="1622237197926">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state x="402" y="146" width="1095" height="734" key="SettingsEditor/0.25.1600.875@0.25.1600.875" timestamp="1622237197926" />
+    <state x="394" y="168" width="812" height="593" key="new project wizard" timestamp="1622238135256">
+      <screen x="0" y="25" width="1600" height="875" />
+    </state>
+    <state x="394" y="168" width="812" height="593" key="new project wizard/0.25.1600.875@0.25.1600.875" timestamp="1622238135256" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/module-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/openjfx2/lib/javafx.graphics/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6908">
+          <caret line="349" column="25" selection-start-line="349" selection-start-column="25" selection-end-line="349" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JavaFXApp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>efekstest</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>openjfx</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
