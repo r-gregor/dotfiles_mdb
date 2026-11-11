@@ -526,3 +526,6 @@ nnoremap <LEADER>pe ^vt"cprintf <ESC>j
 " --- INSERT BASH SCRIPT HEADER (GLOBALS, FUNCTIONS, MAIN) ---
 nnoremap <LEADER>h 0i# === GLOBALS ===<CR># === FUNCTIONS ===<CR># === MAIN ===<CR><CR>printf "\n"<CR><ESC>
 
+" --- REMOVE ALL EMOJI CHARS ---
+nnoremap ,rme :%s/[^\x00-\xFF]\+ //g<CR>
+
